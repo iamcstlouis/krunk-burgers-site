@@ -33,6 +33,10 @@ export default {
       color: #b23c52;
       text-decoration: underline;
       margin-bottom: 0;
+
+      @media (min-width: 1024px) {
+        font-size: 6.7rem;
+      }
     }
 
     .deliveroo-widget {

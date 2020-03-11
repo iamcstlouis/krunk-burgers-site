@@ -1,52 +1,51 @@
 <template>
   <div class="sub-menu">
     <div class="container">
-          <div class="links">
-            <router-link to="/burgers">Burgers</router-link>
-            <span
-              ><img
-                src="./../assets/icn_footer_menu_bang.svg"
-                alt=""
-                class="separator"
-            /></span>
-            <router-link to="/wings">Wings</router-link>
-            <span
-              ><img
-                src="./../assets/icn_footer_menu_bang.svg"
-                alt=""
-                class="separator"
-            /></span>
-            <router-link to="/shakes">Shakes</router-link>
-            <span
-              ><img
-                src="./../assets/icn_footer_menu_bang.svg"
-                alt=""
-                class="separator"
-            /></span>
-            <router-link to="/desserts">Desserts</router-link>
-          </div>
+      <div class="links">
+        <router-link to="/burgers">Burgers</router-link>
+        <span>
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
+        </span>
+        <router-link to="/wings">Wings</router-link>
+        <span>
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
+        </span>
+        <router-link to="/shakes">Shakes</router-link>
+        <span>
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
+        </span>
+        <router-link to="/desserts">Desserts</router-link>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "SubMenu"
-}
+  name: "SubMenu"
+};
 </script>
 
 <style lang="scss" scoped>
 .sub-menu {
-    .container {
+  margin-top: 3.5rem;
 
-        .links {
-             a {
-            color: #b23c52 !important;
-            font-size: 18px;
-            }
+  .container {
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 65%;
+      margin: 0 auto;
+      a {
+        color: #731550 !important;
+        font-size: 18px;
+
+        @media (min-width: 1024px) {
+          font-size: 2.6rem;
         }
-       
+      }
     }
+  }
 }
-
 </style>
