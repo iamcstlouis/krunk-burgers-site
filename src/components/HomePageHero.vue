@@ -1,7 +1,7 @@
 <template>
   <section class="hero-img">
     <div class="container">
-      <div class="featured-meal-deal col-md-12 col-lg-8 col-xl-6">
+      <div class="featured-meal-deal col-11 col-md-12 col-lg-8 col-xl-6">
         <div class="content-wrapper">
           <div class="content">
             <!-- <div class="hdr-n-info"> -->
@@ -52,7 +52,7 @@ export default {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
 
   @media (min-width: 1440px) {
@@ -81,12 +81,12 @@ export default {
           background: #f9f871;
           // padding: 2rem;
           padding: 2rem 2rem 5rem 2rem;
-          margin-top: 5rem;
+          // margin-top: 5rem;
           align-self: center;
 
           @media (min-width: 768px) {
             text-align: left;
-            margin-top: 9rem;
+            // margin-top: 9rem;
           }
 
           h1 {
