@@ -25,11 +25,11 @@
                 </div>
               </div>
             </div>
-            <!-- Deliveroo Widget -->
-            <DeliverooWidget />
           </div>
         </div>
       </div>
+      <!-- Deliveroo Widget -->
+      <DeliverooWidget />
     </div>
   </section>
 </template>
@@ -51,6 +51,7 @@ export default {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 70vh;
   width: 100%;
 
@@ -58,80 +59,105 @@ export default {
     height: 80vh;
   }
 
-  .featured-meal-deal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .container {
+    position: relative;
+    height: inherit;
 
-    .content-wrapper {
+    .featured-meal-deal {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
 
-      .content {
-        background: #f9f871;
-        // padding: 2rem;
-        padding: 2rem 2rem 5rem 2rem;
-        margin-top: 9rem;
-        align-self: center;
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        @media (min-width: 768px) {
-          text-align: left;
-        }
-
-        h1 {
-          color: #731550;
-          font-size: 5rem;
-          margin: 0;
-        }
-
-        h2 {
-          color: #731550;
-          font-size: 2.5rem;
-          font-weight: 700;
-        }
-
-        span,
-        p {
-          color: #731550;
-        }
-
-        .featured-meal {
-          margin-top: 2rem;
+        .content {
+          background: #f9f871;
+          // padding: 2rem;
+          padding: 2rem 2rem 5rem 2rem;
+          margin-top: 5rem;
+          align-self: center;
 
           @media (min-width: 768px) {
-            display: flex;
+            text-align: left;
+            margin-top: 9rem;
           }
 
-          .featured-meal-info {
-            margin-top: 2rem;
+          h1 {
+            color: #731550;
+            font-size: 4rem;
+            margin: 0;
 
             @media (min-width: 768px) {
-              margin-left: 2rem;
-              text-align: left;
+              font-size: 5rem;
             }
           }
 
-          .view-more-btn {
-            margin-top: 3rem;
+          h2 {
+            color: #731550;
+            font-size: 2.5rem;
+            font-weight: 700;
+          }
 
-            a {
-              background: rgb(224, 53, 53);
-              color: #fff;
-              padding: 1rem 2rem;
-              font-family: "dnk";
-              letter-spacing: 1.2px;
-              text-decoration: none;
+          span,
+          p {
+            color: #731550;
+          }
 
-              &:hover {
+          .featured-meal {
+            margin-top: 2rem;
+
+            @media (min-width: 768px) {
+              display: flex;
+            }
+
+            .featured-meal-info {
+              margin-top: 2rem;
+
+              @media (min-width: 768px) {
+                margin-left: 2rem;
+                text-align: left;
+              }
+            }
+
+            .view-more-btn {
+              margin-top: 3rem;
+
+              @media (min-width: 768px) {
+                margin-top: 4.5rem;
+              }
+
+              a {
+                background: rgb(224, 53, 53);
+                color: #fff;
+                padding: 1rem 2rem;
+                font-family: "dnk";
+                letter-spacing: 1.2px;
                 text-decoration: none;
+
+                &:hover {
+                  text-decoration: none;
+                }
               }
             }
           }
         }
       }
     }
+  }
+
+  .deliveroo-widget {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -26px;
+    z-index: 2;
   }
 }
 </style>

@@ -111,24 +111,39 @@
     <router-view />
 
     <footer>
-        <div class="view-our-menu">
-            <router-link to="/" class="menu-link">
-                View Our Menu
-            </router-link>
+      <div class="view-our-menu">
+        <router-link to="/" class="menu-link">
+          View Our Menu
+        </router-link>
+      </div>
+      <div class="footer-nav">
+        <div class="content-wrapper">
+          <div class="links">
+            <router-link to="/burgers">Burgers</router-link>
+            <span
+              ><img
+                src="./assets/icn_footer_menu_bang.svg"
+                alt=""
+                class="separator"
+            /></span>
+            <router-link to="/wings">Wings</router-link>
+            <span
+              ><img
+                src="./assets/icn_footer_menu_bang.svg"
+                alt=""
+                class="separator"
+            /></span>
+            <router-link to="/shakes">Shakes</router-link>
+            <span
+              ><img
+                src="./assets/icn_footer_menu_bang.svg"
+                alt=""
+                class="separator"
+            /></span>
+            <router-link to="/desserts">Desserts</router-link>
+          </div>
         </div>
-        <div class="footer-nav">
-            <div class="content-wrapper">
-                <div class="links">
-                    <router-link to="/burgers">Burgers</router-link>
-                    <span><img src="./assets/icn_footer_menu_bang.svg" alt="" class="separator"></span>
-                    <router-link to="/wings">Wings</router-link>
-                    <span><img src="./assets/icn_footer_menu_bang.svg" alt="" class="separator"></span>
-                    <router-link to="/shakes">Shakes</router-link>
-                    <span><img src="./assets/icn_footer_menu_bang.svg" alt="" class="separator"></span>
-                    <router-link to="/desserts">Desserts</router-link>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -237,6 +252,10 @@ a {
       &:first-child {
         margin-left: 0;
       }
+
+      a {
+        padding: 5px;
+      }
     }
 
     @media (min-width: 992px) {
@@ -246,6 +265,10 @@ a {
 
       li {
         margin-left: 1rem;
+
+        a {
+          padding: 5px;
+        }
       }
     }
 
@@ -271,49 +294,49 @@ a {
 // ----------------------------------------------------------------
 
 footer {
-     background: #290540 url('./assets/bg-buildings.svg') bottom center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     padding: 8rem 0 5rem 0;
+  background: #290540 url("./assets/bg-buildings.svg") bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0 5rem 0;
+  position: relative;
 
-    .view-our-menu {
-        a {
-            font-family: "dnk";
-            font-size: 4rem;
-            color: #fff;
-            text-decoration: none;
+  .view-our-menu {
+    a {
+      font-family: "dnk";
+      font-size: 4rem;
+      color: #fff;
+      text-decoration: none;
 
-            &:hover {
-                text-decoration: none;
-            }
+      &:hover {
+        text-decoration: none;
+      }
 
-            @media (min-width: 768px) {
-                font-size: 7rem;
-            }
-        }
+      @media (min-width: 768px) {
+        font-size: 7rem;
+      }
     }
+  }
 
-    .footer-nav {
+  .footer-nav {
+    .links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-        .links {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+      @media (min-width: 768px) {
+        width: 60%;
+        margin: 0 auto;
 
-            @media (min-width: 768px) {
-                width: 60%;
-                margin: 0 auto;
-
-                a {
-                    font-size: 3rem;
-                }
-            }
-            
         a {
-            color: #F9F871;
-            // font-size: 3rem;
+          font-size: 3rem;
         }
-        }
+      }
+
+      a {
+        color: #f9f871;
+        // font-size: 3rem;
+      }
     }
+  }
 }
 </style>
