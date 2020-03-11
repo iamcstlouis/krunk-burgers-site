@@ -28,7 +28,11 @@ export default {
 
 <style lang="scss" scoped>
 .sub-menu {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
+
+  @media (min-width: 1024px) {
+    margin-top: 3.5rem;
+  }
 
   .container {
     .links {
@@ -37,13 +41,22 @@ export default {
       justify-content: space-around;
       width: 65%;
       margin: 0 auto;
+
       a {
         color: #731550 !important;
-        font-size: 18px;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
 
         @media (min-width: 1024px) {
           font-size: 2.6rem;
         }
+      }
+
+      span {
+        margin: 0 0.5rem;
       }
     }
   }
