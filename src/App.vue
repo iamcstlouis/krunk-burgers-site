@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
@@ -78,12 +74,12 @@
     <router-view />
 
     <!-- Top Nav -->
-    <TopNav />
+    <!-- <TopNav /> -->
     <!-- Hero Image -->
-    <HomePageHero />
+    <!-- <HomePageHero /> -->
 
     <!-- Footer -->
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -121,6 +117,93 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.navbar {
+  background: #290540;
+
+  .navbar-brand {
+    width: 8rem;
+
+    img {
+      width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 15.2rem;
+      width: 100%;
+    }
+  }
+
+  .top-nav {
+    flex-direction: row;
+    justify-content: space-around;
+
+    li {
+      a {
+        color: #fff !important;
+        font-family: 'dnk';
+
+        &:hover {
+          color: #F9F871;
+        }
+      }
+
+      &.active {
+        border-bottom: solid #fff 1px;
+
+        a {
+          color: #fff !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        font-size: 2.4rem;
+        margin-right: 2.3rem;
+      }
+    }
+  }
+
+  .socials {
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
+
+    li {
+      margin-left: 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      width: auto;
+      margin-left: auto;
+      margin-right: 0;
+
+      li {
+        margin-left: 1rem;
+      }
+    }
+
+    a {
+      background: #F9F871;
+      padding: 1rem;
+      border-radius: 50%;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+
+        path {
+          fill: #290540;
+        }
+      }
+    }
   }
 }
 </style>
