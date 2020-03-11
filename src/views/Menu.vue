@@ -6,6 +6,7 @@
 
       <h1>Menu</h1>
       <SubMenu />
+      <MealDeals />
     </div>
   </div>
 </template>
@@ -13,12 +14,14 @@
 <script>
 import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
+import MealDeals from "@/components/MealDeals.vue";
 
 export default {
   name: "Menu",
   components: {
     DeliverooWidget,
-    SubMenu
+    SubMenu,
+    MealDeals
   }
 };
 </script>
@@ -26,6 +29,7 @@ export default {
 <style lang="scss" scoped>
 .menu {
   background-color: #f9b450;
+  padding-bottom: 12rem;
 
   .container {
     h1 {
@@ -33,6 +37,7 @@ export default {
       color: #b23c52;
       text-decoration: underline;
       margin-bottom: 0;
+      margin-top: 3rem;
 
       @media (min-width: 1024px) {
         font-size: 6.7rem;
