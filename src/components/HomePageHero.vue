@@ -6,7 +6,7 @@
           <div class="content">
             <!-- <div class="hdr-n-info"> -->
             <h1 class="meal-deals-hdr">Meal Deals</h1>
-            <span>Meals served with regular fires and a soft drink</span>
+            <span>Meals served with regular fries and a soft drink</span>
             <!-- </div> -->
             <div class="featured-meal">
               <img

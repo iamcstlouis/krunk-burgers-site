@@ -96,7 +96,6 @@ export default {
 
     a {
       color: #fff;
-      // opacity: .7;
     }
   }
 }
