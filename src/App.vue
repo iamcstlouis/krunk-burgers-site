@@ -294,7 +294,7 @@ a {
 // ----------------------------------------------------------------
 
 footer {
-  background: #290540 url("./assets/bg-buildings.svg") bottom center;
+  background: #290540 url("./assets/bg-buildings.svg") 100% 45px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8rem 0 5rem 0;
