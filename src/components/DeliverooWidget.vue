@@ -2,6 +2,7 @@
   <div class="deliveroo-widget">
     <a
       href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+      target="_blank"
     >
       <div class="content-wrapper">
         <svg

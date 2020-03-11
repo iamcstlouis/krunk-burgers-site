@@ -6,6 +6,7 @@
 
       <h1>Menu</h1>
       <SubMenu />
+      <MenuHdrs />
       <MealDeals />
     </div>
   </div>
@@ -15,13 +16,15 @@
 import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
 import MealDeals from "@/components/MealDeals.vue";
+import MenuHdrs from "@/components/MenuHdrs.vue";
 
 export default {
   name: "Menu",
   components: {
     DeliverooWidget,
     SubMenu,
-    MealDeals
+    MealDeals,
+    MenuHdrs
   }
 };
 </script>
@@ -48,6 +51,11 @@ export default {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 768px) {
+        margin-right: 0;
+      }
     }
   }
 }

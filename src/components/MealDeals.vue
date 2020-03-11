@@ -15,12 +15,18 @@ export default {
 
 <style lang="scss" scoped>
 .meal-deals {
+  position: relative;
   background-color: #fff;
-  margin-top: 16.6rem;
+  margin-top: 10.5rem;
   padding: 9.2rem 2rem;
 
   @media (min-width: 1024px) {
     padding: 9.2rem 7.2rem;
+    margin-top: 14.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 17.5rem;
   }
 
   h1 {
