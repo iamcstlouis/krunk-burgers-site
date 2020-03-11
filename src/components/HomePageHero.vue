@@ -158,6 +158,7 @@ export default {
     transform: translateX(-50%);
     bottom: -26px;
     z-index: 2;
+    border-radius: 5px;
   }
 }
 </style>

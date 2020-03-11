@@ -74,11 +74,12 @@ export default {
   background-color: #35b8b2;
   width: 24.8rem;
   height: 5.2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   font-family: "dnk";
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   transition: all 1s;
   cursor: pointer;
 
