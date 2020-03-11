@@ -19,12 +19,14 @@
                   Cheese, pickles, home-made coleslaw & burger
                 </p>
                 <div class="view-more-btn">
-                  <a href="/menus.html" class="view-more">
+                  <router-link to="/menu" class="view-more">
                     View More
-                  </a>
+                  </router-link>
                 </div>
               </div>
             </div>
+            <!-- Deliveroo Widget -->
+            <DeliverooWidget />
           </div>
         </div>
       </div>
@@ -33,8 +35,13 @@
 </template>
 
 <script>
+import DeliverooWidget from "@/components/DeliverooWidget.vue";
+
 export default {
-  name: "HomePageHero"
+  name: "HomePageHero",
+  components: {
+    DeliverooWidget
+  }
 };
 </script>
 

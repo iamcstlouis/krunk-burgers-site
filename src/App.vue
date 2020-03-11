@@ -194,6 +194,10 @@ a {
     flex-direction: row;
     justify-content: space-around;
 
+    @media (min-width: 992px) {
+      margin-left: 30px;
+    }
+
     li {
       a {
         color: #fff !important;
@@ -228,6 +232,7 @@ a {
 
     li {
       margin-left: 1rem;
+      padding: 0;
 
       &:first-child {
         margin-left: 0;
