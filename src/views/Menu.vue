@@ -1,7 +1,10 @@
 <template>
   <div class="menu">
-    <ComicText />
+    
     <div class="container">
+      <!-- Comic Text -->
+      <ComicText />
+
       <!-- Deliveroo Widget -->
       <DeliverooWidget />
 
@@ -34,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
+  position: relative;
   background-color: #f9b450;
   padding-bottom: 12rem;
 
@@ -52,6 +56,16 @@ export default {
       @media (min-width: 1024px) {
         font-size: 6.7rem;
         margin-top: 0;
+      }
+    }
+
+    .comic-text {
+      position: absolute;
+      left: 0;
+      display: none;
+
+      @media (min-width: 576px) {
+        display: block;
       }
     }
 

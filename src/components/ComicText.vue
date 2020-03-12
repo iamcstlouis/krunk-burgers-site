@@ -12,19 +12,35 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .comic-text {
-    background-color: #fff;
-    width: 26.4rem;
-    height: 3.8rem;
+    position: relative;
 
     .content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         h3 {
             font-family: "dnk";
             font-size: 16px;
+            background-color: #fff;
             color: #731550;
+            width: 26.4rem;
+            height: 3.8rem;
+            z-index: 300;
+            padding-top: 1rem;
         }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        background-color: #290540;
+        width: 26.4rem;
+        height: 3.8rem;
+        left: .5rem;
+        top: .5rem;
     }
 }
 </style>
