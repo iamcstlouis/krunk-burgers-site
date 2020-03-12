@@ -1,5 +1,6 @@
 <template>
   <div class="menu">
+    <ComicText />
     <div class="container">
       <!-- Deliveroo Widget -->
       <DeliverooWidget />
@@ -17,6 +18,7 @@ import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
 import MealDeals from "@/components/MealDeals.vue";
 import MenuHdr from "@/components/MenuHdr.vue";
+import ComicText from "@/components/ComicText.vue";
 
 export default {
   name: "Menu",
@@ -24,7 +26,8 @@ export default {
     DeliverooWidget,
     SubMenu,
     MealDeals,
-    MenuHdr
+    MenuHdr,
+    ComicText
   }
 };
 </script>
