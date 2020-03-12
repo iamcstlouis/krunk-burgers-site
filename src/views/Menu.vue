@@ -42,8 +42,13 @@ export default {
       margin-bottom: 0;
       margin-top: 3rem;
 
+      @media (min-width: 768px) {
+        margin-top: 1rem;
+      }
+
       @media (min-width: 1024px) {
         font-size: 6.7rem;
+        margin-top: 0;
       }
     }
 
