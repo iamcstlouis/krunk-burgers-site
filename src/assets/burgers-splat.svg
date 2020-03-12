@@ -1,1 +1,29 @@
-<svg height="294" viewBox="0 0 350 294" width="350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><mask id="a" fill="#fff"><path d="m.0002 0h350.6328v294.4373h-350.6328z" fill="#fff" fill-rule="evenodd"/></mask><g fill="none" fill-rule="evenodd"><path d="m167.9992-.0007s-7.609 144.585-90.146 35.122c0 0 77.268 108.878-77.853 67.317 0 0 154.536 45.659 4.683 134.048 0 0 158.048-84.292 139.316 57.951 0 0 16.976-156.292 131.708-40.39 0 0-97.171-108.292 74.926-91.902 0 0-169.755-15.219-18.146-103.609 0 0-118.244 67.902-95.415-9.366 0 0-64.389 76.683-69.073-49.171" fill="#731550" mask="url(#a)"/><text fill="#f9f871" font-family="DamnNoisyKids, Damn Noisy Kids" font-size="42" letter-spacing=".7875"><tspan x="81" y="165">Burgers</tspan></text></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="294px" viewBox="0 0 350 294" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icn_burgers_bang!</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0002 0 350.633 0 350.633 294.4373 0.0002 294.4373"></polygon>
+    </defs>
+    <g id="Krunk-Burgers-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Burger-Menu" transform="translate(-142.000000, -320.000000)">
+            <g id="icn_burgers_bang!" transform="translate(142.000000, 320.000000)">
+                <g id="icn_bang!-light-purple" fill-rule="evenodd" stroke-width="1">
+                    <g id="bang!-Vector">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M167.9992,-0.0007 C167.9992,-0.0007 160.3902,144.5843 77.8532,35.1213 C77.8532,35.1213 155.1212,143.9993 0.0002,102.4383 C0.0002,102.4383 154.5362,148.0973 4.6832,236.4863 C4.6832,236.4863 162.7312,152.1943 143.9992,294.4373 C143.9992,294.4373 160.9752,138.1453 275.7072,254.0473 C275.7072,254.0473 178.5362,145.7553 350.6332,162.1453 C350.6332,162.1453 180.8782,146.9263 332.4872,58.5363 C332.4872,58.5363 214.2432,126.4383 237.0722,49.1703 C237.0722,49.1703 172.6832,125.8533 167.9992,-0.0007" id="Fill-1" fill="#731550" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+                <g id="Burgers" transform="translate(81.000000, 123.000000)" fill="#F9F871" font-family="Helvetica" font-size="42" font-weight="normal" letter-spacing="0.7875">
+                    <text>
+                        <tspan x="0" y="40">Burgers</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
