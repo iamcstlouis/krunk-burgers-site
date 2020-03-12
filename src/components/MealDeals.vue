@@ -1,8 +1,10 @@
 <template>
   <section class="meal-deals">
     <div class="container">
-      <h1>Meal Deals</h1>
-      <h3>Meals served with regular fries and a soft drink</h3>
+      <div class="hdr-section">
+        <h1>Meal Deals</h1>
+        <h3>Meals served with regular fries and a soft drink</h3>
+      </div>
     </div>
   </section>
 </template>
@@ -29,18 +31,22 @@ export default {
     margin-top: 17.5rem;
   }
 
-  h1 {
-    color: #b23c52;
+  .container {
+    .hdr-section {
+      h1 {
+        color: #b23c52;
 
-    @media (min-width: 768px) {
-      font-size: 42px;
+        @media (min-width: 768px) {
+          font-size: 42px;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        color: #b23c52;
+        font-size: 16px;
+      }
     }
-  }
-
-  h3 {
-    margin: 0;
-    color: #b23c52;
-    font-size: 16px;
   }
 }
 </style>
