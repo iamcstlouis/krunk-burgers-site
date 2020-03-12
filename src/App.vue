@@ -144,10 +144,6 @@ a {
 
 .navbar {
   background: #290540;
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 100;
 
   .navbar-brand {
     width: 8rem;
