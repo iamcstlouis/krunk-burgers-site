@@ -1,6 +1,5 @@
 <template>
   <div class="menu">
-    
     <div class="container">
       <!-- Comic Text -->
       <ComicText />

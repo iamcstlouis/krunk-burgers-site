@@ -1,15 +1,20 @@
 <template>
   <section class="meal-deals">
-    <MenuTab>
-        <h2>Beef</h2>
-    </MenuTab>
+    <!-- <MenuTab>
+      <h2>Beef</h2>
+    </MenuTab> -->
     <div class="container">
       <div class="hdr-section">
         <h1>Meal Deals</h1>
         <h3>Meals served with regular fries and a soft drink</h3>
       </div>
 
-      <div class="cards">
+      <div class="cards cards__beef">
+        <!-- Menu Tab -->
+        <MenuTab>
+          <h2>Beef</h2>
+        </MenuTab>
+
         <!-- Card 01 -->
         <BurgerCard>
           <a
@@ -113,6 +118,118 @@
           </a>
         </BurgerCard>
       </div>
+
+      <MealsSeparator />
+
+      <div class="cards cards__chicken">
+        <!-- Menu Tab -->
+        <MenuTab>
+          <h2>Chicken</h2>
+        </MenuTab>
+
+        <!-- Card 01 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/chicken-burger-1.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Classic</h2>
+              <p class="meal-desc">
+                Cheese, pickles, home-made coleslaw & burger
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+        <!-- Card 02 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/chicken-burger-2.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Flamer</h2>
+              <p class="meal-desc">
+                Cheese, jalepeno, home-made coleslaw, chipotle sauce
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+        <!-- Card 03 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>BBQ Blaze</h2>
+              <p class="meal-desc">
+                Cheese pickles, home-made coleslaw & bbq sauce
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+        <!-- Card 04 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Calypso</h2>
+              <p class="meal-desc">
+                Cheese, pickles, homemade coleslaw and mango habanero sauce
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+        <!-- Card 05 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Buffalo</h2>
+              <p class="meal-desc">
+                Cheese, pickles, home-made coleslaw and Frank’s red hot sauce
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+      </div>
+
+      <MealsSeparator />
+
     </div>
   </section>
 </template>
@@ -120,12 +237,14 @@
 <script>
 import BurgerCard from "@/components/BurgerCard.vue";
 import MenuTab from "@/components/MenuTab.vue";
+import MealsSeparator from "@/components/MealsSeparator.vue";
 
 export default {
   name: "MealDeals",
   components: {
     BurgerCard,
-    MenuTab
+    MenuTab,
+    MealsSeparator
   }
 };
 </script>
@@ -144,17 +263,6 @@ export default {
 
   @media (min-width: 1280px) {
     margin-top: 17.5rem;
-  }
-
-  .menu-tab {
-    position: absolute;
-    left: -68.1px;
-    top: 180px;
-    display: none;
-
-    @media (min-width: 1280px) {
-      display: block;
-    }
   }
 
   .container {
@@ -191,6 +299,31 @@ export default {
 
       @media (min-width: 1200px) {
         width: 100%;
+      }
+
+      &__beef {
+        position: relative;
+
+          .menu-tab {
+            left: -15.5rem;
+            top: 1rem;
+        }
+      }
+
+      &__chicken {
+        position: relative;
+
+        .menu-tab {
+            left: -15.5rem;
+            top: 1rem;
+
+          .content-wrapper {
+
+            h2 {
+               margin-top: 14rem;
+            }
+          }
+        }
       }
     }
   }
