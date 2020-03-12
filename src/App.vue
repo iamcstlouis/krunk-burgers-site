@@ -29,7 +29,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/menu" class="nav-link" href="#"
+              <router-link to="/menu-burgers" class="nav-link" href="#"
                 >Menu</router-link
               >
             </li>
@@ -112,12 +112,12 @@
 
     <footer>
       <div class="view-our-menu">
-        <router-link to="/menu" class="menu-link">View Our Menu</router-link>
+        <router-link to="/menu-burgers" class="menu-link">View Our Menu</router-link>
       </div>
       <div class="footer-nav">
         <div class="content-wrapper">
           <div class="links">
-            <router-link to="/burgers">Burgers</router-link>
+            <router-link to="/menu-burgers">Burgers</router-link>
             <span>
               <img
                 src="./assets/icn_footer_menu_bang.svg"
@@ -125,7 +125,7 @@
                 class="separator"
               />
             </span>
-            <router-link to="/wings">Wings</router-link>
+            <router-link to="/menu-wings">Wings</router-link>
             <span>
               <img
                 src="./assets/icn_footer_menu_bang.svg"

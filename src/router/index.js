@@ -1,9 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Menu from "../views/Menu.vue";
+import Burgers from "../views/Burgers.vue";
+import Wings from "../views/Wings.vue";
 import About from "../views/About.vue";
-import MenuWings from "../views/MenuWings.vue";
 
 Vue.use(VueRouter);
 
@@ -14,16 +14,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/menu",
-    name: "Menu",
-    component: Menu,
-    children: [
-      {
-        path: "/menu-wings",
-        name: MenuWings,
-        component: MenuWings
-      }
-    ]
+    path: "/menu-burgers",
+    name: "Burgers",
+    component: Burgers
+  },
+  {
+    path: "/menu-wings",
+    name: "Wings",
+    component: Wings
   },
   {
     path: "/about",

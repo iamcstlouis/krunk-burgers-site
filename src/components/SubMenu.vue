@@ -2,7 +2,7 @@
   <div class="sub-menu">
     <div class="container">
       <div class="links">
-        <router-link to="/burgers">Burgers</router-link>
+        <router-link to="/menu-burgers">Burgers</router-link>
         <span>
           <img
             src="./../assets/menu/icn_sub_menu_bang.svg"
@@ -10,7 +10,7 @@
             class="separator"
           />
         </span>
-        <router-link to="/wings">Wings</router-link>
+        <router-link to="/menu-wings">Wings</router-link>
         <span>
           <img
             src="./../assets/menu/icn_sub_menu_bang.svg"

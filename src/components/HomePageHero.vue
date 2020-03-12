@@ -19,7 +19,7 @@
                   Cheese, pickles, home-made coleslaw & burger
                 </p>
                 <div class="view-more-btn">
-                  <router-link to="/menu" class="view-more">
+                  <router-link to="/menu-burgers" class="view-more">
                     View More
                   </router-link>
                 </div>
