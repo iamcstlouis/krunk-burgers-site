@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "MenuHdrs"
+  name: "MenuHdr"
 };
 </script>
 

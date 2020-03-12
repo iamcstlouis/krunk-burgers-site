@@ -6,7 +6,7 @@
 
       <h1>Menu</h1>
       <SubMenu />
-      <MenuHdrs />
+      <MenuHdr />
       <MealDeals />
     </div>
   </div>
@@ -16,7 +16,7 @@
 import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
 import MealDeals from "@/components/MealDeals.vue";
-import MenuHdrs from "@/components/MenuHdrs.vue";
+import MenuHdr from "@/components/MenuHdr.vue";
 
 export default {
   name: "Menu",
@@ -24,7 +24,7 @@ export default {
     DeliverooWidget,
     SubMenu,
     MealDeals,
-    MenuHdrs
+    MenuHdr
   }
 };
 </script>
