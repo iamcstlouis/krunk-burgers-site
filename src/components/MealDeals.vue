@@ -230,6 +230,56 @@
 
       <MealsSeparator />
 
+      <div class="cards cards__vegan">
+        <!-- Menu Tab -->
+        <MenuTab>
+          <h2>Vegan</h2>
+        </MenuTab>
+
+        <!-- Card 01 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/vegan-burger-1.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Classic</h2>
+              <p class="meal-desc">
+                Cheese, pickles, home-made coleslaw & burger
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+        <!-- Card 02 -->
+        <BurgerCard>
+          <a
+            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+            target="_blank"
+          >
+            <img
+              src="./../assets/menu/burgers/vegan-burger-2.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="meal-info">
+              <h2>Flamer</h2>
+              <p class="meal-desc">
+                Cheese, jalepeno, home-made coleslaw, chipotle sauce
+              </p>
+            </div>
+          </a>
+        </BurgerCard>
+
+      </div>
+
+      <MealsSeparator />
+
     </div>
   </section>
 </template>
@@ -321,6 +371,22 @@ export default {
 
             h2 {
                margin-top: 14rem;
+            }
+          }
+        }
+      }
+
+      &__vegan {
+        position: relative;
+
+        .menu-tab {
+            left: -15.5rem;
+            top: 1rem;
+
+          .content-wrapper {
+
+            h2 {
+              margin-top: 11.5rem;
             }
           }
         }
