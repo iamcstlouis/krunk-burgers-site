@@ -40,6 +40,10 @@ export default {
   background-color: #f9b450;
   padding-bottom: 12rem;
 
+  @media (min-width: 1280px) {
+    padding-bottom: 20rem;
+  }
+
   .container {
     h1 {
       font-size: 5rem;

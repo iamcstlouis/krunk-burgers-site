@@ -248,9 +248,9 @@
               class="card-img"
             />
             <div class="meal-info">
-              <h2>Classic</h2>
+              <h2>Veganator</h2>
               <p class="meal-desc">
-                Cheese, pickles, home-made coleslaw & burger
+                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo, served in toasted vegan brioche bun
               </p>
             </div>
           </a>
@@ -268,17 +268,15 @@
               class="card-img"
             />
             <div class="meal-info">
-              <h2>Flamer</h2>
+              <h2>Spicy Veganator</h2>
               <p class="meal-desc">
-                Cheese, jalepeno, home-made coleslaw, chipotle sauce
+                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo & jalapenos served in toasted vegan brioche bun
               </p>
             </div>
           </a>
         </BurgerCard>
 
       </div>
-
-      <MealsSeparator />
 
     </div>
   </section>
