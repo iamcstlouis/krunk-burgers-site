@@ -1,17 +1,36 @@
 <template>
   <section class="meal-deals">
     <div class="container">
+      
       <div class="hdr-section">
         <h1>Meal Deals</h1>
         <h3>Meals served with regular fries and a soft drink</h3>
       </div>
+
+      <div class="cards">
+        <BurgerCard>
+          <img src="./../assets/menu/burgers/beef-burger-1.jpg" alt="" class="card-img">
+          <div class="meal-info">
+              <h2>Krunk Burger</h2>
+              <p class="meal-desc">
+                2 x smashed beef patties, 2 x slices of cheese, topped with Krunk burger sauce, pickles, lettuce, tomato & onion
+              </p>
+          </div>
+        </BurgerCard>
+      </div>
+      
     </div>
   </section>
 </template>
 
 <script>
+import BurgerCard from '@/components/BurgerCard.vue';
+
 export default {
-  name: "MealDeals"
+  name: "MealDeals",
+  components: {
+    BurgerCard
+  }
 };
 </script>
 
@@ -46,6 +65,10 @@ export default {
         color: #b23c52;
         font-size: 16px;
       }
+    }
+
+    .cards {
+      margin-top: 9.3rem;
     }
   }
 }
