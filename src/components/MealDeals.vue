@@ -1,5 +1,8 @@
 <template>
   <section class="meal-deals">
+    <MenuTab>
+        <h2>Beef</h2>
+    </MenuTab>
     <div class="container">
       <div class="hdr-section">
         <h1>Meal Deals</h1>
@@ -116,11 +119,13 @@
 
 <script>
 import BurgerCard from "@/components/BurgerCard.vue";
+import MenuTab from "@/components/MenuTab.vue";
 
 export default {
   name: "MealDeals",
   components: {
-    BurgerCard
+    BurgerCard,
+    MenuTab
   }
 };
 </script>
@@ -139,6 +144,17 @@ export default {
 
   @media (min-width: 1280px) {
     margin-top: 17.5rem;
+  }
+
+  .menu-tab {
+    position: absolute;
+    left: -68.1px;
+    top: 180px;
+    display: none;
+
+    @media (min-width: 1280px) {
+      display: block;
+    }
   }
 
   .container {
