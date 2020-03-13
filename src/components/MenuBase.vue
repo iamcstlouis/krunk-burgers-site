@@ -10,7 +10,8 @@
             <h1>Menu</h1>
             <SubMenu />
             <MenuHdr />
-            <MealDeals />
+            <!-- <MealDeals /> -->
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -18,7 +19,7 @@
 <script>
 import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
-import MealDeals from "@/components/MealDeals.vue";
+// import MealDeals from "@/components/MealDeals.vue";
 import MenuHdr from "@/components/MenuHdr.vue";
 import ComicText from "@/components/ComicText.vue";
 
@@ -27,7 +28,7 @@ export default {
     components: {
         DeliverooWidget,
         SubMenu,
-        MealDeals,
+        // MealDeals,
         MenuHdr,
         ComicText
     }

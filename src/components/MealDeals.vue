@@ -1,8 +1,5 @@
 <template>
   <section class="meal-deals">
-    <!-- <MenuTab>
-      <h2>Beef</h2>
-    </MenuTab> -->
     <div class="container">
       <div class="hdr-section">
         <h1>Meal Deals</h1>
