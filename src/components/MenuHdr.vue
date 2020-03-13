@@ -2,6 +2,7 @@
   <div class="menu-hdr">
     <div class="content-wrapper">
       <img src="./../assets/burgers-splat.png" alt class="menu-hdr-graphic" />
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -19,8 +20,8 @@ export default {
   margin-top: 3rem;
 
   @media (min-width: 1280px) {
-        margin-top: .7rem;
-      }
+    margin-top: 0.7rem;
+  }
 
   .content-wrapper {
     width: 35.1rem;
