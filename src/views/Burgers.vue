@@ -1,6 +1,8 @@
 <template>
   <div class="burgers">
     <MenuBase>
+          <h1 class="test">{{$store.state.testTitle}}</h1>
+
       <BurgerMealDeals />
     </MenuBase>
   </div>

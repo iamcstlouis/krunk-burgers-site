@@ -1,5 +1,7 @@
 <template>
   <div class="burger-card">
+    <h1>{{test}}</h1>
+    <button @click="showTitle()">test</button>
     <div class="content-wrapper">
       <slot></slot>
     </div>
@@ -8,7 +10,22 @@
 
 <script>
 export default {
-  name: "BurgerCard"
+  name: "BurgerCard",
+  data() {
+    return {
+      test: 'test'
+    }
+
+ 
+
+
+  },
+
+     methods: {
+      showTitle () {
+        this.$store.commit('passingTitle', this.test)
+      }
+    }
 };
 </script>
 

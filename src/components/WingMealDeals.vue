@@ -24,14 +24,7 @@
             
                 <div class="wing-flavours-list">
                     <ul id="flavours">
-                        <li>Original</li>
-                        <li>Smokey BBQ</li>
-                        <li>Atomic Hot</li>
-                        <li>Lemon Pepper</li>
-                        <li>Garlic Parmesan</li>
-                        <li>Mango Habanero</li>
-                        <li>Sweet chilli</li>
-                        <li>Honey Mustard</li>
+                        <li v-for="item in flavours" :key="item.flavour">{{ item.flavour }}</li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +35,40 @@
 
 <script>
 export default {
-    name: "WingMealDeals"
+    name: "WingMealDeals",
+    data() {
+        return {
+            flavours: [
+                {
+                    flavour: "Original",
+                },
+                {
+                    flavour: "Smokey BBQ",
+                },
+                {
+                    flavour: "Atomic Hot",
+                },
+                {
+                    flavour: "Lemon Pepper",
+                },
+                {
+                    flavour: "Garlic Parmesan",
+                },
+                {
+                    flavour: "Mango Habanero",
+                },
+                {
+                    flavour: "Sweet chilli",
+                },
+                {
+                    flavour: "Smokey BBQ",
+                },
+                {
+                    flavour: "Honey Mustard",
+                }
+            ]
+        }
+    }
 }
 </script>
 
