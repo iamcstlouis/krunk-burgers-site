@@ -285,7 +285,7 @@ import MenuTab from "@/components/MenuTab.vue";
 import MealsSeparator from "@/components/MealsSeparator.vue";
 
 export default {
-  name: "MealDeals",
+  name: "BurgerMealDeals",
   components: {
     BurgerCard,
     MenuTab,

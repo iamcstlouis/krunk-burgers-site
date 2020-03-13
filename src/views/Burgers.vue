@@ -2,7 +2,7 @@
   <div class="burgers">
     <MenuBase>
   
-      <MealDeals />
+      <BurgerMealDeals />
 
     </MenuBase>
   </div>
@@ -10,13 +10,13 @@
 
 <script>
 import MenuBase from "@/components/MenuBase.vue";
-import MealDeals from "@/components/MealDeals.vue";
+import BurgerMealDeals from "@/components/BurgerMealDeals.vue";
 
 export default {
   name: "Menu",
   components: {
     MenuBase,
-    MealDeals
+    BurgerMealDeals
   }
 };
 </script>
