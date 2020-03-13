@@ -4,14 +4,8 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    testTitle: ''
-  },
-  mutations: {
-    passingTitle (state, n) {
-      state.testTitle = n
-    }
-  },
+  state: {},
+  mutations: {},
   actions: {},
   modules: {}
 });
