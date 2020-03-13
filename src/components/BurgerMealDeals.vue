@@ -1,5 +1,5 @@
 <template>
-  <section class="meal-deals">
+  <section class="burger-meal-deals">
     <div class="container">
       <div class="hdr-section">
         <h1>Meal Deals</h1>
@@ -247,7 +247,8 @@
             <div class="meal-info">
               <h2>Veganator</h2>
               <p class="meal-desc">
-                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo, served in toasted vegan brioche bun
+                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan
+                cheese, vegan mayo, served in toasted vegan brioche bun
               </p>
             </div>
           </a>
@@ -267,14 +268,14 @@
             <div class="meal-info">
               <h2>Spicy Veganator</h2>
               <p class="meal-desc">
-                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo & jalapenos served in toasted vegan brioche bun
+                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan
+                cheese, vegan mayo & jalapenos served in toasted vegan brioche
+                bun
               </p>
             </div>
           </a>
         </BurgerCard>
-
       </div>
-
     </div>
   </section>
 </template>
@@ -295,7 +296,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.meal-deals {
+.burger-meal-deals {
   position: relative;
   background-color: #fff;
   margin-top: 10.5rem;
@@ -349,9 +350,9 @@ export default {
       &__beef {
         position: relative;
 
-          .menu-tab {
-            left: -15.5rem;
-            top: 1rem;
+        .menu-tab {
+          left: -15.5rem;
+          top: 1rem;
         }
       }
 
@@ -359,13 +360,12 @@ export default {
         position: relative;
 
         .menu-tab {
-            left: -15.5rem;
-            top: 1rem;
+          left: -15.5rem;
+          top: 1rem;
 
           .content-wrapper {
-
             h2 {
-               margin-top: 14rem;
+              margin-top: 14rem;
             }
           }
         }
@@ -375,11 +375,10 @@ export default {
         position: relative;
 
         .menu-tab {
-            left: -15.5rem;
-            top: 1rem;
+          left: -15.5rem;
+          top: 1rem;
 
           .content-wrapper {
-
             h2 {
               margin-top: 11.5rem;
             }

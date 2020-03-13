@@ -112,7 +112,9 @@
 
     <footer>
       <div class="view-our-menu">
-        <router-link to="/menu-burgers" class="menu-link">View Our Menu</router-link>
+        <router-link to="/menu-burgers" class="menu-link"
+          >View Our Menu</router-link
+        >
       </div>
       <div class="footer-nav">
         <div class="content-wrapper">

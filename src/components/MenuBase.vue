@@ -1,49 +1,46 @@
 <template>
-    <div class="menu-base">
-        <div class="container">
-             <!-- Comic Text -->
-            <ComicText />
+  <div class="menu-base">
+    <div class="container">
+      <!-- Comic Text -->
+      <ComicText />
 
-            <!-- Deliveroo Widget -->
-            <DeliverooWidget />
+      <!-- Deliveroo Widget -->
+      <DeliverooWidget />
 
-            <h1>Menu</h1>
-            <SubMenu />
-            <MenuHdr />
-            <!-- <BurgerMealDeals /> -->
-            <slot></slot>
-        </div>
+      <h1>Menu</h1>
+      <SubMenu />
+      <MenuHdr />
+      <slot></slot>
     </div>
+  </div>
 </template>
 
 <script>
 import DeliverooWidget from "@/components/DeliverooWidget.vue";
 import SubMenu from "@/components/SubMenu.vue";
-// import BurgerMealDeals from "@/components/BurgerMealDeals.vue";
 import MenuHdr from "@/components/MenuHdr.vue";
 import ComicText from "@/components/ComicText.vue";
 
 export default {
-    name: "MenuBase",
-    components: {
-        DeliverooWidget,
-        SubMenu,
-        // BurgerMealDeals,
-        MenuHdr,
-        ComicText
-    }
-}
+  name: "MenuBase",
+  components: {
+    DeliverooWidget,
+    SubMenu,
+    MenuHdr,
+    ComicText
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-    .menu-base {
-    position: relative;
-    background-color: #f9b450;
-    padding-bottom: 12rem;
+.menu-base {
+  position: relative;
+  background-color: #f9b450;
+  padding-bottom: 12rem;
 
-    @media (min-width: 1280px) {
-        padding-bottom: 20rem;
-    }
+  @media (min-width: 1280px) {
+    padding-bottom: 20rem;
+  }
 
   .container {
     h1 {
