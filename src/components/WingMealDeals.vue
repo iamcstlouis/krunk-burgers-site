@@ -7,7 +7,10 @@
             </div>
 
             <div class="main-content">
-                <img src="./../assets/menu/wings/wings.jpg" alt="Krunks WIngs">
+
+                <div class="img-wrapper">
+                    <img src="./../assets/menu/wings/wings.jpg" alt="Krunks Wings" class="featured-img">
+                </div>
 
                 <div class="wings-flavours-hdr">
                     <div class="hdr-wrapper">
@@ -16,12 +19,18 @@
                 </div>
 
                 <div class="wing-flavours-list">
-                    <ul class="list">
-                        <li></li>
+                    <ul id="flavours">
+                        <li>Original</li>
+                        <li>Smokey BBQ</li>
+                        <li>Atomic Hot</li>
+                        <li>Lemon Pepper</li>
+                        <li>Garlic Parmesan</li>
+                        <li>Mango Habanero</li>
+                        <li>Sweet chilli</li>
+                        <li>Honey Mustard</li>
                     </ul>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -65,6 +74,20 @@ export default {
         color: #b23c52;
         font-size: 16px;
       }
+    }
+
+    .main-content {
+        .img-wrapper {
+            margin-top: 5rem;
+
+            @media (min-width: 992px) {
+                margin-top: 6rem;
+            }
+            
+            .featured-img {
+                width: 100%;
+            }
+        }
     }
   }
 }

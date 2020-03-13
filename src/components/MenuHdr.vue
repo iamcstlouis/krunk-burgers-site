@@ -18,6 +18,10 @@ export default {
   z-index: 4;
   margin-top: 3rem;
 
+  @media (min-width: 1280px) {
+        margin-top: .7rem;
+      }
+
   .content-wrapper {
     width: 35.1rem;
     text-align: left;
