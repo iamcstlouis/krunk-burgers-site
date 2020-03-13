@@ -1,7 +1,7 @@
 <template>
   <div class="menu-hdr">
     <div class="content-wrapper">
-      <img src="./../assets/burgers-splat.png" alt class="menu-hdr-graphic" />
+      <img src="./../assets/menu/burgers/burgers-splat.png" alt class="menu-hdr-graphic" />
       <slot></slot>
     </div>
   </div>

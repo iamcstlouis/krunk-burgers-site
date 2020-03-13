@@ -1,7 +1,7 @@
 <template>
   <div class="menu-wings">
     <MenuBase>
-        <WingMealDeals />
+      <WingMealDeals />
     </MenuBase>
   </div>
 </template>
