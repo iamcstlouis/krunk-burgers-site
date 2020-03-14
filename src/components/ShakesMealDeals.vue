@@ -1,5 +1,5 @@
 <template>
-  <div class="wing-meal-deals">
+  <div class="shakes-meal-deals">
     <div class="container">
       <div class="hdr-section">
         <h1>Meal Deals</h1>
@@ -9,7 +9,11 @@
       <div class="main-content">
         <div class="img-hdr-wrapper">
           <div class="img-wrapper">
-            <img src="./../assets/menu/wings/wings.jpg" alt="Krunks Wings" class="featured-img" />
+            <img
+              src="./../assets/menu/shakes-n-smoothies/krunk-snickers-milkshake.jpg"
+              alt="Krunks Shakes"
+              class="featured-img"
+            />
           </div>
 
           <div class="wings-hdr-wrapper">
@@ -73,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wing-meal-deals {
+.shakes-meal-deals {
   position: relative;
   background-color: #fff;
   margin-top: 10.5rem;

@@ -3,12 +3,12 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Burgers from "../views/Burgers.vue";
 import Wings from "../views/Wings.vue";
+import Shakes from "../views/Shakes.vue";
 import About from "../views/About.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: "/",
     name: "Home",
     component: Home
@@ -22,6 +22,11 @@ const routes = [
     path: "/menu-wings",
     name: "Wings",
     component: Wings
+  },
+  {
+    path: "/menu-shakes",
+    name: "Shakes",
+    component: Shakes
   },
   {
     path: "/about",

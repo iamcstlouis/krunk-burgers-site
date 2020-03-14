@@ -4,27 +4,15 @@
       <div class="links">
         <router-link to="/menu-burgers">Burgers</router-link>
         <span>
-          <img
-            src="./../assets/menu/icn_sub_menu_bang.svg"
-            alt
-            class="separator"
-          />
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
         <router-link to="/menu-wings">Wings</router-link>
         <span>
-          <img
-            src="./../assets/menu/icn_sub_menu_bang.svg"
-            alt
-            class="separator"
-          />
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
-        <router-link to="/shakes">Shakes</router-link>
+        <router-link to="/menu-shakes">Shakes</router-link>
         <span>
-          <img
-            src="./../assets/menu/icn_sub_menu_bang.svg"
-            alt
-            class="separator"
-          />
+          <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
         <router-link to="/desserts">Desserts</router-link>
       </div>
