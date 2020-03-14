@@ -26,6 +26,7 @@
             <li v-for="item in flavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
+                target="_blank"
               >{{ item.flavour }}</a>
             </li>
           </ul>
