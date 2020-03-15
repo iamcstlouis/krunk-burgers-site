@@ -18,7 +18,7 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind:alt="alt" />
+            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
@@ -42,7 +42,7 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind="alt" />
+            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
@@ -66,7 +66,7 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind="alt" />
+            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
