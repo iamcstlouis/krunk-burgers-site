@@ -53,6 +53,7 @@
 
       <MealsSeparator />
 
+      <!-- Vegan Burger Cards -->
       <div class="cards cards__vegan">
         <!-- Menu Tab -->
         <MenuTab>
@@ -60,36 +61,15 @@
         </MenuTab>
 
         <!-- Card 01 -->
-        <BurgerCard>
+        <BurgerCard v-for="(obj, key) in veganBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img src="./../assets/menu/burgers/vegan-burger-1.jpg" alt class="card-img" />
+            <img v-bind:src="obj.burgerImg" v-bind="alt" />
             <div class="meal-info">
-              <h2>Veganator</h2>
-              <p class="meal-desc">
-                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan
-                cheese, vegan mayo, served in toasted vegan brioche bun
-              </p>
-            </div>
-          </a>
-        </BurgerCard>
-
-        <!-- Card 02 -->
-        <BurgerCard>
-          <a
-            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
-            target="_blank"
-          >
-            <img src="./../assets/menu/burgers/vegan-burger-2.jpg" alt class="card-img" />
-            <div class="meal-info">
-              <h2>Spicy Veganator</h2>
-              <p class="meal-desc">
-                Oriental vegetables, coriander, lentil crumb, lemon grass, vegan
-                cheese, vegan mayo & jalapenos served in toasted vegan brioche
-                bun
-              </p>
+              <h2>{{ obj.burgerName }}</h2>
+              <p class="meal-desc">{{ obj.burgerDesc }}</p>
             </div>
           </a>
         </BurgerCard>
@@ -186,6 +166,22 @@ export default {
         burgerName: "Buffalo",
         burgerDesc:
           "Cheese, pickles, home-made coleslaw and Frank’s red hot sauce"
+      }
+    ],
+    veganBurger: [
+      {
+        burgerImg: require("./../assets/menu/burgers/vegan-burger-1.jpg"),
+        alt: "The Veganator Burger",
+        burgerName: "Veganator",
+        burgerDesc:
+          "Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo, served in toasted vegan brioche bun"
+      },
+      {
+        burgerImg: require("./../assets/menu/burgers/vegan-burger-2.jpg"),
+        alt: "The Spicy Veganator Burger",
+        burgerName: "Spicy Veganator",
+        burgerDesc:
+          "Oriental vegetables, coriander, lentil crumb, lemon grass, vegan cheese, vegan mayo & jalapenos served in toasted vegan brioche bun"
       }
     ]
   })
