@@ -21,6 +21,10 @@ export default {
   }
 
   @media (min-width: 992px) {
+    &:nth-child(6) {
+      margin-left: 1rem;
+    }
+
     &:last-child {
       margin-right: auto;
       margin-left: 1rem;
@@ -29,7 +33,7 @@ export default {
 
   @media (min-width: 1024px) {
     &:last-child {
-      margin-left: 0;
+      margin-left: 7.1rem;
     }
   }
 
