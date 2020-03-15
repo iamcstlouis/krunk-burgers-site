@@ -13,104 +13,15 @@
         </MenuTab>
 
         <!-- Card 01 -->
-        <BurgerCard>
+        <BurgerCard v-for="(obj, key) in beefBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/beef-burger-1.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/beef-burger-1.jpg" alt class="card-img" />
             <div class="meal-info">
-              <h2>Krunk Burger</h2>
-              <p class="meal-desc">
-                2 x smashed beef patties, 2 x slices of cheese, topped with
-                Krunk burger sauce, pickles, lettuce, tomato & onion
-              </p>
-            </div>
-          </a>
-        </BurgerCard>
-
-        <!-- Card 02 -->
-        <BurgerCard>
-          <a
-            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
-            target="_blank"
-          >
-            <img
-              src="./../assets/menu/burgers/beef-burger-2.jpg"
-              alt=""
-              class="card-img"
-            />
-            <div class="meal-info">
-              <h2>Plain Jane</h2>
-              <p class="meal-desc">
-                2 x smashed beef patties, topped with Krunk burger sauce,
-                pickles, lettuce, tomato & onion
-              </p>
-            </div>
-          </a>
-        </BurgerCard>
-
-        <!-- Card 03 -->
-        <BurgerCard>
-          <a
-            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
-            target="_blank"
-          >
-            <img
-              src="./../assets/menu/burgers/beef-burger-3.jpg"
-              alt=""
-              class="card-img"
-            />
-            <div class="meal-info">
-              <h2>Juicy Lucy</h2>
-              <p class="meal-desc">
-                Melt in the middle cheese, relish & Krunk burger sauce
-              </p>
-            </div>
-          </a>
-        </BurgerCard>
-
-        <!-- Card 04 -->
-        <BurgerCard>
-          <a
-            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
-            target="_blank"
-          >
-            <img
-              src="./../assets/menu/burgers/beef-burger-4.jpg"
-              alt=""
-              class="card-img"
-            />
-            <div class="meal-info">
-              <h2>Spicy Lucy</h2>
-              <p class="meal-desc">
-                Melt in the middle cheese, relish, jalepenos, chipotle sauce
-              </p>
-            </div>
-          </a>
-        </BurgerCard>
-
-        <!-- Card 05 -->
-        <BurgerCard>
-          <a
-            href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
-            target="_blank"
-          >
-            <img
-              src="./../assets/menu/burgers/beef-burger-5.jpg"
-              alt=""
-              class="card-img"
-            />
-            <div class="meal-info">
-              <h2>BBQ Bang</h2>
-              <p class="meal-desc">
-                2 x smashed beef patties, 2 x slices of cheese, topped with bbq
-                sauce, pickles, lettuce, tomato & onion
-              </p>
+              <h2>{{ obj.burgerName }}</h2>
+              <p class="meal-desc">{{ obj.burgerDesc }}</p>
             </div>
           </a>
         </BurgerCard>
@@ -130,16 +41,10 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/chicken-burger-1.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/chicken-burger-1.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Classic</h2>
-              <p class="meal-desc">
-                Cheese, pickles, home-made coleslaw & burger
-              </p>
+              <p class="meal-desc">Cheese, pickles, home-made coleslaw & burger</p>
             </div>
           </a>
         </BurgerCard>
@@ -150,16 +55,10 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/chicken-burger-2.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/chicken-burger-2.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Flamer</h2>
-              <p class="meal-desc">
-                Cheese, jalepeno, home-made coleslaw, chipotle sauce
-              </p>
+              <p class="meal-desc">Cheese, jalepeno, home-made coleslaw, chipotle sauce</p>
             </div>
           </a>
         </BurgerCard>
@@ -170,16 +69,10 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>BBQ Blaze</h2>
-              <p class="meal-desc">
-                Cheese pickles, home-made coleslaw & bbq sauce
-              </p>
+              <p class="meal-desc">Cheese pickles, home-made coleslaw & bbq sauce</p>
             </div>
           </a>
         </BurgerCard>
@@ -190,16 +83,10 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Calypso</h2>
-              <p class="meal-desc">
-                Cheese, pickles, homemade coleslaw and mango habanero sauce
-              </p>
+              <p class="meal-desc">Cheese, pickles, homemade coleslaw and mango habanero sauce</p>
             </div>
           </a>
         </BurgerCard>
@@ -210,16 +97,10 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/chicken-burger-3-4-5.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Buffalo</h2>
-              <p class="meal-desc">
-                Cheese, pickles, home-made coleslaw and Frank’s red hot sauce
-              </p>
+              <p class="meal-desc">Cheese, pickles, home-made coleslaw and Frank’s red hot sauce</p>
             </div>
           </a>
         </BurgerCard>
@@ -239,11 +120,7 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/vegan-burger-1.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/vegan-burger-1.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Veganator</h2>
               <p class="meal-desc">
@@ -260,11 +137,7 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img
-              src="./../assets/menu/burgers/vegan-burger-2.jpg"
-              alt=""
-              class="card-img"
-            />
+            <img src="./../assets/menu/burgers/vegan-burger-2.jpg" alt class="card-img" />
             <div class="meal-info">
               <h2>Spicy Veganator</h2>
               <p class="meal-desc">
@@ -291,7 +164,52 @@ export default {
     BurgerCard,
     MenuTab,
     MealsSeparator
-  }
+  },
+  data: () => ({
+    beefBurger: [
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "Krunk Burger",
+        burgerName: "Krunk Burger",
+        burgerDesc:
+          "2 x smashed beef patties, 2 x slices of cheese, topped with Krunk burger sauce, pickles, lettuce, tomato & onion"
+      },
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "Plain Jane",
+        burgerName: "Plain Jane",
+        burgerDesc:
+          "2 x smashed beef patties, topped with Krunk burger sauce, pickles, lettuce, tomato & onion"
+      },
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "Juicy Lucy",
+        burgerName: "Juicy Lucy",
+        burgerDesc: "Melt in the middle cheese, relish & Krunk burger sauce"
+      },
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "Spicy Lucy",
+        burgerName: "Spicy Lucy",
+        burgerDesc:
+          "Melt in the middle cheese, relish, jalepenos, chipotle sauce"
+      },
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "BBQ Bang",
+        burgerName: "BBQ Bang",
+        burgerDesc:
+          "2 x smashed beef patties, 2 x slices of cheese, topped with bbq sauce, pickles, lettuce, tomato & onion"
+      },
+      {
+        burgerImg: "./../assets/menu/burgers/beef-burger-1.jpg",
+        alt: "Bacon Double Cheeseburger",
+        burgerName: "Bacon Double Cheeseburger",
+        burgerDesc:
+          "2 x Smashed beef patties, 2 x slices of cheese, turkey rashers topped with Krunk burger sauce, pickles, lettuce, tomato & onion. Includes skin on fries and soft drink."
+      }
+    ]
+  })
 };
 </script>
 
