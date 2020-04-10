@@ -1,13 +1,12 @@
 <template>
   <section class="hero-img">
-    <div class="container">
+    <b-container>
       <div class="featured-meal-deal col-11 col-md-12 col-lg-8 col-xl-6">
         <div class="content-wrapper">
           <div class="content">
-            <!-- <div class="hdr-n-info"> -->
             <h1 class="meal-deals-hdr">Meal Deals</h1>
             <span>Meals served with regular fries and a soft drink</span>
-            <!-- </div> -->
+
             <div class="featured-meal">
               <img
                 src="./../assets/homepage/krunk-chicken-flamer-burger.jpg"
@@ -15,22 +14,19 @@
               />
               <div class="featured-meal-info">
                 <h2 class="featured-meal-name">Classic Chicken</h2>
-                <p class="featured-meal-desc">
-                  Cheese, pickles, home-made coleslaw & burger
-                </p>
+                <p class="featured-meal-desc">Cheese, pickles, home-made coleslaw & burger</p>
                 <div class="view-more-btn">
-                  <router-link to="/menu-burgers" class="view-more">
-                    View More
-                  </router-link>
+                  <router-link to="/menu-burgers" class="view-more">View More</router-link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Deliveroo Widget -->
       <DeliverooWidget />
-    </div>
+    </b-container>
   </section>
 </template>
 
