@@ -1,6 +1,6 @@
 <template>
   <section class="burger-meal-deals">
-    <div class="container">
+    <b-container>
       <div class="hdr-section">
         <h1>Meal Deals</h1>
         <h3>Meals served with regular fries and a soft drink</h3>
@@ -74,7 +74,7 @@
           </a>
         </BurgerCard>
       </div>
-    </div>
+    </b-container>
   </section>
 </template>
 
