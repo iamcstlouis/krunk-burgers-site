@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
+      <b-container>
         <router-link to="/" class="navbar-brand" href="#">
           <img src="./assets/krunk-burgers-logo.png" alt="Krunks Burgers Logo" class="top-nav-logo" />
         </router-link>
@@ -70,7 +70,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </b-container>
     </nav>
 
     <transition name="fade" mode="out-in">
@@ -78,28 +78,30 @@
     </transition>
 
     <footer>
-      <div class="view-our-menu">
-        <router-link to="/menu-burgers" class="menu-link">View Our Menu</router-link>
-      </div>
-      <div class="footer-nav">
-        <div class="content-wrapper">
-          <div class="links">
-            <router-link to="/menu-burgers">Burgers</router-link>
-            <span>
-              <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
-            </span>
-            <router-link to="/menu-wings">Wings</router-link>
-            <span>
-              <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
-            </span>
-            <router-link to="/shakes">Shakes</router-link>
-            <span>
-              <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
-            </span>
-            <router-link to="/desserts">Desserts</router-link>
+      <b-container>
+        <div class="view-our-menu">
+          <router-link to="/menu-burgers" class="menu-link">View Our Menu</router-link>
+        </div>
+        <div class="footer-nav">
+          <div class="content-wrapper">
+            <div class="links">
+              <router-link to="/menu-burgers">Burgers</router-link>
+              <span>
+                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+              </span>
+              <router-link to="/menu-wings">Wings</router-link>
+              <span>
+                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+              </span>
+              <router-link to="/shakes">Shakes</router-link>
+              <span>
+                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+              </span>
+              <router-link to="/desserts">Desserts</router-link>
+            </div>
           </div>
         </div>
-      </div>
+      </b-container>
     </footer>
   </div>
 </template>
