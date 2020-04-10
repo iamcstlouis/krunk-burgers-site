@@ -1,6 +1,6 @@
 <template>
   <div class="menu-base">
-    <div class="container">
+    <b-container>
       <!-- Comic Text -->
       <ComicText />
 
@@ -11,7 +11,7 @@
       <SubMenu />
       <MenuHdr />
       <slot></slot>
-    </div>
+    </b-container>
   </div>
 </template>
 
