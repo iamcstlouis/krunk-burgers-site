@@ -1,6 +1,6 @@
 <template>
   <div class="shakes-meal-deals">
-    <div class="container">
+    <b-container>
       <div class="hdr-section">
         <h1>Meal Deals</h1>
         <h3>Meals served with regular fries and a soft drink</h3>
@@ -36,7 +36,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
