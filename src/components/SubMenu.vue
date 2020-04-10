@@ -1,6 +1,6 @@
 <template>
   <div class="sub-menu">
-    <div class="container">
+    <b-container>
       <div class="links">
         <router-link to="/menu-burgers">Burgers</router-link>
         <span>
@@ -16,7 +16,7 @@
         </span>
         <router-link to="/desserts">Desserts</router-link>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
