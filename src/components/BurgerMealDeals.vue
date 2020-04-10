@@ -207,21 +207,22 @@ export default {
     .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-evenly;
 
       @media (min-width: 992px) {
         margin-top: 1rem;
       }
 
-      @media (min-width: 1024px) and (max-width: 1200px) {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      // @media (min-width: 1024px) and (max-width: 1200px) {
+      //   width: 85%;
+      //   margin-left: auto;
+      //   margin-right: auto;
+      // }
 
-      @media (min-width: 1200px) {
-        width: 100%;
-      }
+      // @media (min-width: 1200px) {
+      //   width: 100%;
+      //   justify-content: space-around;
+      // }
 
       &__beef {
         position: relative;
