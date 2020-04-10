@@ -150,7 +150,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
