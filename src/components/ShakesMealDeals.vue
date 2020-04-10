@@ -43,36 +43,34 @@
 <script>
 export default {
   name: "WingMealDeals",
-  data() {
-    return {
-      flavours: [
-        {
-          flavour: "Original"
-        },
-        {
-          flavour: "Smokey BBQ"
-        },
-        {
-          flavour: "Atomic Hot"
-        },
-        {
-          flavour: "Lemon Pepper"
-        },
-        {
-          flavour: "Garlic Parmesan"
-        },
-        {
-          flavour: "Mango Habanero"
-        },
-        {
-          flavour: "Sweet chilli"
-        },
-        {
-          flavour: "Honey Mustard"
-        }
-      ]
-    };
-  }
+  data: () => ({
+    flavours: [
+      {
+        flavour: "Original"
+      },
+      {
+        flavour: "Smokey BBQ"
+      },
+      {
+        flavour: "Atomic Hot"
+      },
+      {
+        flavour: "Lemon Pepper"
+      },
+      {
+        flavour: "Garlic Parmesan"
+      },
+      {
+        flavour: "Mango Habanero"
+      },
+      {
+        flavour: "Sweet chilli"
+      },
+      {
+        flavour: "Honey Mustard"
+      }
+    ]
+  })
 };
 </script>
 
