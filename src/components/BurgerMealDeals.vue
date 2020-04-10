@@ -1,6 +1,8 @@
 <template>
   <section class="burger-meal-deals">
     <b-container>
+      <MealDealsHdrExcerpt />
+
       <!-- Beef Burger Cards  -->
       <div class="cards cards__beef">
         <!-- Menu Tab -->
@@ -74,6 +76,7 @@
 </template>
 
 <script>
+import MealDealsHdrExcerpt from "@/components/MealDealsHdrExcerpt.vue";
 import BurgerCard from "@/components/BurgerCard.vue";
 import MenuTab from "@/components/MenuTab.vue";
 import MealsSeparator from "@/components/MealsSeparator.vue";
@@ -81,6 +84,7 @@ import MealsSeparator from "@/components/MealsSeparator.vue";
 export default {
   name: "BurgerMealDeals",
   components: {
+    MealDealsHdrExcerpt,
     BurgerCard,
     MenuTab,
     MealsSeparator

@@ -1,6 +1,7 @@
 <template>
   <div class="wing-meal-deals">
     <b-container>
+      <MealDealsHdrExcerpt />
 
       <div class="main-content">
         <div class="img-hdr-wrapper">
@@ -33,8 +34,11 @@
 </template>
 
 <script>
+import MealDealsHdrExcerpt from "@/components/MealDealsHdrExcerpt.vue";
+
 export default {
   name: "WingMealDeals",
+  components: { MealDealsHdrExcerpt },
   data: () => ({
     flavours: [
       {
@@ -83,7 +87,6 @@ export default {
   }
 
   .container {
-
     .main-content {
       .img-hdr-wrapper {
         position: relative;

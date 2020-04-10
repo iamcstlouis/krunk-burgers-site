@@ -1,13 +1,17 @@
 <template>
   <div class="hdr-section">
-    <h1>Meal Deals</h1>
-    <h3>Meals served with regular fries and a soft drink</h3>
+    <h1>{{ MealDealstitle }}</h1>
+    <h3>{{ MealDealsExcerpt }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MealDealsHdrExcerpt"
+  name: "MealDealsHdrExcerpt",
+  data: () => ({
+    MealDealstitle: "Meal Deals",
+    MealDealsExcerpt: "Meals served with regular fries and a soft drink"
+  })
 };
 </script>
 
