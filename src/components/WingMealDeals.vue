@@ -1,6 +1,6 @@
 <template>
   <div class="wing-meal-deals">
-    <div class="container">
+    <b-container>
       <div class="hdr-section">
         <h1>Meal Deals</h1>
         <h3>Meals served with regular fries and a soft drink</h3>
@@ -32,43 +32,41 @@
           </ul>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
 <script>
 export default {
   name: "WingMealDeals",
-  data() {
-    return {
-      flavours: [
-        {
-          flavour: "Original"
-        },
-        {
-          flavour: "Smokey BBQ"
-        },
-        {
-          flavour: "Atomic Hot"
-        },
-        {
-          flavour: "Lemon Pepper"
-        },
-        {
-          flavour: "Garlic Parmesan"
-        },
-        {
-          flavour: "Mango Habanero"
-        },
-        {
-          flavour: "Sweet chilli"
-        },
-        {
-          flavour: "Honey Mustard"
-        }
-      ]
-    };
-  }
+  data: () => ({
+    flavours: [
+      {
+        flavour: "Original"
+      },
+      {
+        flavour: "Smokey BBQ"
+      },
+      {
+        flavour: "Atomic Hot"
+      },
+      {
+        flavour: "Lemon Pepper"
+      },
+      {
+        flavour: "Garlic Parmesan"
+      },
+      {
+        flavour: "Mango Habanero"
+      },
+      {
+        flavour: "Sweet chilli"
+      },
+      {
+        flavour: "Honey Mustard"
+      }
+    ]
+  })
 };
 </script>
 
