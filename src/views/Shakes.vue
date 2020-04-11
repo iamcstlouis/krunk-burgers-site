@@ -1,6 +1,16 @@
 <template>
   <div class="menu-shakes">
     <MenuBase>
+      <div class="menu-hdr">
+        <div class="content-wrapper">
+          <img
+            src="./../assets/menu/shakes-n-smoothies/shakes-splat.png"
+            alt
+            class="menu-hdr-graphic"
+          />
+        </div>
+      </div>
+
       <ShakesMealDeals />
     </MenuBase>
   </div>
@@ -18,5 +28,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

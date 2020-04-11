@@ -2,6 +2,18 @@
   <div class="menu-hdr">
     <div class="content-wrapper">
       <img src="./../assets/menu/burgers/burgers-splat.png" alt class="menu-hdr-graphic" />
+      <!-- <img
+        src="./../assets/menu/wings/wings-splat.png"
+        alt
+        class="menu-hdr-graphic"
+        v-else-if="$routes.meta.wingsMenu"
+      />
+      <img
+        src="./../assets/menu/shakes-n-smoothies/shakes-splat.png"
+        alt
+        class="menu-hdr-graphic"
+        v-else-if="$routes.meta.shakesMenu"
+      />-->
       <slot></slot>
     </div>
   </div>

@@ -1,6 +1,12 @@
 <template>
   <div class="menu-wings">
     <MenuBase>
+      <div class="menu-hdr">
+        <div class="content-wrapper">
+          <img src="./../assets/menu/wings/wings-splat.png" alt class="menu-hdr-graphic" />
+        </div>
+      </div>
+
       <WingMealDeals />
     </MenuBase>
   </div>
@@ -19,4 +25,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>

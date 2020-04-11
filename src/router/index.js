@@ -17,16 +17,31 @@ const routes = [{
     path: "/menu-burgers",
     name: "Burgers",
     component: Burgers
+    // meta: {
+    //   burgersMenu: true,
+    //   wingsMenu: false,
+    //   shakesMenu: false
+    // }
   },
   {
     path: "/menu-wings",
     name: "Wings",
     component: Wings
+    // meta: {
+    //   wingsMenu: true,
+    //   burgersMenu: false,
+    //   shakesMenu: false
+    // }
   },
   {
     path: "/menu-shakes",
     name: "Shakes",
     component: Shakes
+    // meta: {
+    //   shakesMenu: true,
+    //   wingsMenu: false,
+    //   burgersMenu: false
+    // }
   },
   {
     path: "/about",
