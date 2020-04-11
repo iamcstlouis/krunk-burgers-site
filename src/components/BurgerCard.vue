@@ -35,7 +35,7 @@ export default {
 
   @media (min-width: 1200px) {
     max-width: 31rem;
-    padding: 0 1.5rem;
+    padding: 0 4rem;
   }
 
   img {
