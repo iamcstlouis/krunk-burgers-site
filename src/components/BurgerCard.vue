@@ -19,7 +19,6 @@ export default {
   @media (min-width: 768px) {
     max-width: 31rem;
     padding: 0 3rem;
-    // flex: 0 0 48%;
   }
 
   @media (min-width: 992px) and (max-width: 1024px) {

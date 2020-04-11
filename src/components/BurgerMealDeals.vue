@@ -10,6 +10,7 @@
           <h2>Beef</h2>
         </MenuTab>
 
+        <!-- <h2 class="mobile-tab">Beef</h2> -->
         <BurgerCard v-for="(obj, key) in beefBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -34,6 +35,8 @@
           <h2>Chicken</h2>
         </MenuTab>
 
+        <!-- <h2 class="mobile-tab">Chicken</h2> -->
+
         <BurgerCard v-for="(obj, key) in chickenBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -57,7 +60,8 @@
           <h2>Vegan</h2>
         </MenuTab>
 
-        <!-- Card 01 -->
+        <!-- <h2 class="mobile-tab">Vegan</h2> -->
+
         <BurgerCard v-for="(obj, key) in veganBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -207,6 +211,29 @@ export default {
     .cards {
       display: flex;
       flex-wrap: wrap;
+
+      .mobile-tab {
+        font-family: "dnk";
+        color: #f9b450;
+        font-size: 26px;
+        margin-bottom: 0;
+        position: relative;
+
+        &:after {
+          content: "";
+          height: 0.2rem;
+          width: 100%;
+          background: #f9b450;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        &:first-child {
+          margin-bottom: -2rem;
+        }
+      }
 
       @media (min-width: 992px) {
         margin-top: 1rem;
