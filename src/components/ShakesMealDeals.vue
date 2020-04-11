@@ -13,8 +13,8 @@
             />
           </div>
 
-          <div class="wings-hdr-wrapper">
-            <div class="wings-flavours-hdr">
+          <div class="shakes-hdr-wrapper">
+            <div class="shakes-flavours-hdr">
               <div class="hdr-wrapper">
                 <h2>Flavours</h2>
               </div>
@@ -22,9 +22,15 @@
           </div>
         </div>
 
-        <div class="wing-flavours-list">
+        <div class="shakes-flavours-list">
+          <div class="shakes-flavours-hdr-mobile">
+            <div class="hdr-wrapper">
+              <h2>Flavours</h2>
+            </div>
+          </div>
+
           <ul id="flavours">
-            <li v-for="item in flavours" :key="item.flavour">
+            <li v-for="item in shakeFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
@@ -46,30 +52,36 @@ export default {
     MealDealsHdrExcerpt
   },
   data: () => ({
-    flavours: [
+    shakeFlavours: [
       {
-        flavour: "Original"
+        flavour: "Oreo"
       },
       {
-        flavour: "Smokey BBQ"
+        flavour: "Ferrero Rocher"
       },
       {
-        flavour: "Atomic Hot"
+        flavour: "Kinder Bueno"
       },
       {
-        flavour: "Lemon Pepper"
+        flavour: "Reeses buttercup"
       },
       {
-        flavour: "Garlic Parmesan"
+        flavour: "Snickers"
       },
       {
-        flavour: "Mango Habanero"
+        flavour: "Mars"
       },
       {
-        flavour: "Sweet chilli"
+        flavour: "Strawberry"
       },
       {
-        flavour: "Honey Mustard"
+        flavour: "Chocolate"
+      },
+      {
+        flavour: "Banana"
+      },
+      {
+        flavour: "Bounty"
       }
     ]
   })
@@ -94,6 +106,10 @@ export default {
 
   .container {
     .main-content {
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
+
       .img-hdr-wrapper {
         position: relative;
 
@@ -104,12 +120,16 @@ export default {
             margin-top: 6rem;
           }
 
+          @media (min-width: 1024px) {
+            max-width: 450px;
+          }
+
           .featured-img {
             width: 100%;
           }
         }
 
-        .wings-hdr-wrapper {
+        .shakes-hdr-wrapper {
           position: absolute;
           bottom: -1.9rem;
           left: 50%;
@@ -124,8 +144,12 @@ export default {
             bottom: -3.5rem;
           }
 
-          .wings-flavours-hdr {
+          .shakes-flavours-hdr {
             position: relative;
+
+            @media screen and (min-width: 1024px) {
+              display: none;
+            }
 
             .hdr-wrapper {
               display: flex;
@@ -165,7 +189,7 @@ export default {
         }
       }
 
-      .wing-flavours-list {
+      .shakes-flavours-list {
         margin-top: 5rem;
 
         @media (min-width: 768px) {
@@ -175,6 +199,49 @@ export default {
         @media (min-width: 992px) {
           padding-left: 3.5rem;
           margin-top: 10rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+          margin-top: 6rem;
+        }
+
+        .shakes-flavours-hdr-mobile {
+          display: none;
+        }
+
+        @media screen and (min-width: 1024px) {
+          padding-left: 5rem;
+
+          .shakes-flavours-hdr-mobile {
+            display: block;
+            position: relative;
+
+            .hdr-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              h2 {
+                font-family: "dnk";
+                font-size: 42px;
+                background-color: #f9f871;
+                color: #731550;
+                z-index: 300;
+                padding-top: 1rem;
+                padding: 0.5rem 2rem;
+              }
+
+              &:after {
+                position: absolute;
+                content: "";
+                background-color: #290540;
+                width: 23rem;
+                height: 6.25rem;
+                left: 0.5rem;
+                top: 0.5rem;
+              }
+            }
+          }
         }
 
         #flavours {
@@ -203,6 +270,11 @@ export default {
                 font-size: 24px;
               }
             }
+          }
+
+          @media screen and (min-width: 1024px) {
+            display: block;
+            margin-top: 6rem;
           }
         }
       }
