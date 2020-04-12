@@ -1,5 +1,5 @@
 <template>
-  <div class="shakes-meal-deals">
+  <div class="smoothies-meal-deals">
     <b-container>
       <MealDealsHdrExcerpt />
 
@@ -7,14 +7,14 @@
         <div class="img-hdr-wrapper">
           <div class="img-wrapper">
             <img
-              src="./../assets/menu/shakes-n-smoothies/krunk-snickers-milkshake.jpg"
+              src="./../assets/menu/shakes-n-smoothies/krunk-snickers-milkshake copy.jpg"
               alt="Krunks Shakes"
               class="featured-img"
             />
           </div>
 
-          <div class="shakes-hdr-wrapper">
-            <div class="shakes-flavours-hdr">
+          <div class="smoothies-hdr-wrapper">
+            <div class="smoothies-flavours-hdr">
               <div class="hdr-wrapper">
                 <h2>Flavours</h2>
               </div>
@@ -22,19 +22,22 @@
           </div>
         </div>
 
-        <div class="shakes-flavours-list">
-          <div class="shakes-flavours-hdr-mobile">
+        <div class="smoothies-flavours-list">
+          <div class="smoothies-flavours-hdr-mobile">
             <div class="hdr-wrapper">
               <h2>Flavours</h2>
             </div>
           </div>
 
-          <ul id="shakes-flavours">
-            <li v-for="item in shakeFlavours" :key="item.flavour">
+          <ul id="smoothie-flavours">
+            <li v-for="item in smoothieFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
-              >{{ item.flavour }}</a>
+              >
+                {{ item.flavour }}
+                <p>{{ item.smoothieDesc }}</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -47,41 +50,35 @@
 import MealDealsHdrExcerpt from "@/components/MealDealsHdrExcerpt.vue";
 
 export default {
-  name: "WingMealDeals",
+  name: "SmoothiesMealDeals",
   components: {
     MealDealsHdrExcerpt
   },
   data: () => ({
-    shakeFlavours: [
+    smoothieFlavours: [
       {
-        flavour: "Oreo"
+        flavour: "Surprise",
+        smoothieDesc: "Pineapple, Mango & Pear"
       },
       {
-        flavour: "Ferrero Rocher"
+        flavour: "Delight",
+        smoothieDesc: "Strawberry, Banana & Peach"
       },
       {
-        flavour: "Kinder Bueno"
+        flavour: "Bliss",
+        smoothieDesc: "Wild Blueberry, Raspberry, Mango & Papaya"
       },
       {
-        flavour: "Reeses buttercup"
+        flavour: "Dream",
+        smoothieDesc: "Raspberry, Mango, Papaya & Grape"
       },
       {
-        flavour: "Snickers"
+        flavour: "Squeeze",
+        smoothieDesc: "Cranberry, Pineapple, Mandarin & Grape"
       },
       {
-        flavour: "Mars"
-      },
-      {
-        flavour: "Strawberry"
-      },
-      {
-        flavour: "Chocolate"
-      },
-      {
-        flavour: "Banana"
-      },
-      {
-        flavour: "Bounty"
+        flavour: "Refresher",
+        smoothieDesc: "Strawberry, Sour Cherry & Grape"
       }
     ]
   })
@@ -89,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.shakes-meal-deals {
+.smoothies-meal-deals {
   position: relative;
   background-color: #fff;
   margin-top: 10.5rem;
@@ -97,18 +94,19 @@ export default {
 
   @media (min-width: 1024px) {
     padding: 9.2rem 7.2rem;
-    margin-top: 14.5rem;
-    margin-bottom: 10rem;
+    margin-top: 25rem;
   }
 
   @media (min-width: 1280px) {
-    margin-top: 17.5rem;
+    margin-top: 27.5rem;
   }
 
   .container {
     .main-content {
       @media screen and (min-width: 1024px) {
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
       }
 
       .img-hdr-wrapper {
@@ -130,7 +128,7 @@ export default {
           }
         }
 
-        .shakes-hdr-wrapper {
+        .smoothies-hdr-wrapper {
           position: absolute;
           bottom: -1.9rem;
           left: 50%;
@@ -145,7 +143,7 @@ export default {
             bottom: -3.5rem;
           }
 
-          .shakes-flavours-hdr {
+          .smoothies-flavours-hdr {
             position: relative;
 
             @media screen and (min-width: 1024px) {
@@ -190,7 +188,7 @@ export default {
         }
       }
 
-      .shakes-flavours-list {
+      .smoothies-flavours-list {
         margin-top: 5rem;
 
         @media (min-width: 768px) {
@@ -202,22 +200,23 @@ export default {
           margin-top: 10rem;
         }
 
-        .shakes-flavours-hdr-mobile {
+        .smoothies-flavours-hdr-mobile {
           display: none;
         }
 
         @media screen and (min-width: 1024px) {
-          padding-left: 5rem;
+          padding-left: 0;
           margin-top: 6rem;
+          margin-right: 9rem;
 
-          .shakes-flavours-hdr-mobile {
+          .smoothies-flavours-hdr-mobile {
             display: block;
             position: relative;
 
             .hdr-wrapper {
               display: flex;
               align-items: center;
-              // justify-content: center;
+              //   justify-content: center;
 
               h2 {
                 font-family: "dnk";
@@ -242,9 +241,13 @@ export default {
           }
         }
 
-        #shakes-flavours {
+        #smoothie-flavours {
           list-style: none;
           padding: 0;
+
+          @media screen and (min-width: 1024px) {
+            max-width: 300px;
+          }
 
           li {
             flex: 0 0 48%;
@@ -254,6 +257,12 @@ export default {
               font-family: "dnk";
               font-size: 18px;
               color: #731550;
+
+              p {
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                color: #b23c52;
+              }
             }
           }
 

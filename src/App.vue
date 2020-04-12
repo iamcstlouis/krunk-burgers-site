@@ -93,11 +93,11 @@
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/shakes">Shakes</router-link>
+              <router-link to="/menu-shakes">Shakes</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/desserts">Desserts</router-link>
+              <router-link to="/menu-desserts">Desserts</router-link>
             </div>
           </div>
         </div>

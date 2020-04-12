@@ -55,7 +55,7 @@ export default {
 
     p {
       font-size: 16px;
-      color: #731550;
+      color: #b23c52;
       margin-top: 0.5rem;
     }
   }
