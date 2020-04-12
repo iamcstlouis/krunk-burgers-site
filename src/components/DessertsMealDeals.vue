@@ -1,5 +1,5 @@
 <template>
-  <div class="smoothies-meal-deals">
+  <div class="desserts-meal-deals">
     <b-container>
       <MealDealsHdrExcerpt />
 
@@ -7,14 +7,14 @@
         <div class="img-hdr-wrapper">
           <div class="img-wrapper">
             <img
-              src="./../assets/menu/shakes-n-smoothies/krunk-snickers-milkshake copy.jpg"
-              alt="Krunks Smoothies"
+              src="./../assets/menu/dessert/dessert-1.jpg"
+              alt="Krunks Desserts"
               class="featured-img"
             />
           </div>
 
-          <div class="smoothies-hdr-wrapper">
-            <div class="smoothies-flavours-hdr">
+          <div class="desserts-hdr-wrapper">
+            <div class="desserts-flavours-hdr">
               <div class="hdr-wrapper">
                 <h2>Flavours</h2>
               </div>
@@ -22,22 +22,13 @@
           </div>
         </div>
 
-        <div class="smoothies-flavours-list">
-          <div class="smoothies-flavours-hdr-mobile">
-            <div class="hdr-wrapper">
-              <h2>Flavours</h2>
-            </div>
-          </div>
-
-          <ul id="smoothie-flavours">
-            <li v-for="item in smoothieFlavours" :key="item.flavour">
+        <div class="desserts-flavours-list">
+          <ul id="desserts-flavours">
+            <li v-for="item in dessertFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
-              >
-                {{ item.flavour }}
-                <p>{{ item.smoothieDesc }}</p>
-              </a>
+              >{{ item.flavour }}</a>
             </li>
           </ul>
         </div>
@@ -50,43 +41,22 @@
 import MealDealsHdrExcerpt from "@/components/MealDealsHdrExcerpt.vue";
 
 export default {
-  name: "SmoothiesMealDeals",
+  name: "DessertsMealDeals",
   components: {
     MealDealsHdrExcerpt
   },
   data: () => ({
-    smoothieFlavours: [
+    dessertFlavours: [
       {
-        flavour: "Surprise",
-        smoothieDesc: "Pineapple, Mango & Pear"
-      },
-      {
-        flavour: "Delight",
-        smoothieDesc: "Strawberry, Banana & Peach"
-      },
-      {
-        flavour: "Bliss",
-        smoothieDesc: "Wild Blueberry, Raspberry, Mango & Papaya"
-      },
-      {
-        flavour: "Dream",
-        smoothieDesc: "Raspberry, Mango, Papaya & Grape"
-      },
-      {
-        flavour: "Squeeze",
-        smoothieDesc: "Cranberry, Pineapple, Mandarin & Grape"
-      },
-      {
-        flavour: "Refresher",
-        smoothieDesc: "Strawberry, Sour Cherry & Grape"
+        flavour: "Chocolate and Hazelnut Tiramisu"
       }
     ]
   })
 };
 </script>
 
-<style lang="scss" scoped>
-.smoothies-meal-deals {
+<style lang="scss">
+.desserts-meal-deals {
   position: relative;
   background-color: #fff;
   margin-top: 10.5rem;
@@ -94,21 +64,15 @@ export default {
 
   @media (min-width: 1024px) {
     padding: 9.2rem 7.2rem;
-    margin-top: 25rem;
+    margin-top: 14.5rem;
   }
 
   @media (min-width: 1280px) {
-    margin-top: 27.5rem;
+    margin-top: 17.5rem;
   }
 
   .container {
     .main-content {
-      @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-      }
-
       .img-hdr-wrapper {
         position: relative;
 
@@ -119,16 +83,12 @@ export default {
             margin-top: 6rem;
           }
 
-          @media (min-width: 1024px) {
-            max-width: 450px;
-          }
-
           .featured-img {
             width: 100%;
           }
         }
 
-        .smoothies-hdr-wrapper {
+        .desserts-hdr-wrapper {
           position: absolute;
           bottom: -1.9rem;
           left: 50%;
@@ -143,12 +103,8 @@ export default {
             bottom: -3.5rem;
           }
 
-          .smoothies-flavours-hdr {
+          .desserts-flavours-hdr {
             position: relative;
-
-            @media screen and (min-width: 1024px) {
-              display: none;
-            }
 
             .hdr-wrapper {
               display: flex;
@@ -188,7 +144,7 @@ export default {
         }
       }
 
-      .smoothies-flavours-list {
+      .desserts-flavours-list {
         margin-top: 5rem;
 
         @media (min-width: 768px) {
@@ -200,54 +156,9 @@ export default {
           margin-top: 10rem;
         }
 
-        .smoothies-flavours-hdr-mobile {
-          display: none;
-        }
-
-        @media screen and (min-width: 1024px) {
-          padding-left: 0;
-          margin-top: 6rem;
-          margin-right: 9rem;
-
-          .smoothies-flavours-hdr-mobile {
-            display: block;
-            position: relative;
-
-            .hdr-wrapper {
-              display: flex;
-              align-items: center;
-              //   justify-content: center;
-
-              h2 {
-                font-family: "dnk";
-                font-size: 42px;
-                background-color: #f9f871;
-                color: #731550;
-                z-index: 300;
-                padding-top: 1rem;
-                padding: 0.5rem 2rem;
-              }
-
-              &:after {
-                position: absolute;
-                content: "";
-                background-color: #290540;
-                width: 23rem;
-                height: 6.25rem;
-                left: 0.5rem;
-                top: 0.5rem;
-              }
-            }
-          }
-        }
-
-        #smoothie-flavours {
+        #desserts-flavours {
           list-style: none;
           padding: 0;
-
-          @media screen and (min-width: 1024px) {
-            max-width: 300px;
-          }
 
           li {
             flex: 0 0 48%;
@@ -257,12 +168,6 @@ export default {
               font-family: "dnk";
               font-size: 18px;
               color: #731550;
-
-              p {
-                font-family: "Open Sans", sans-serif;
-                font-size: 16px;
-                color: #b23c52;
-              }
             }
           }
 
@@ -277,12 +182,6 @@ export default {
                 font-size: 24px;
               }
             }
-          }
-
-          @media screen and (min-width: 1024px) {
-            display: block;
-            margin-top: 6rem;
-            padding-left: 2rem;
           }
         }
       }
