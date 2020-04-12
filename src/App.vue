@@ -25,7 +25,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/menu-burgers" class="nav-link" href="#">Menu</router-link>
+              <router-link to="/krunk-burgers" class="nav-link" href="#">Menu</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link" href="#">About</router-link>
@@ -80,24 +80,24 @@
     <footer>
       <b-container>
         <div class="view-our-menu">
-          <router-link to="/menu-burgers" class="menu-link">View Our Menu</router-link>
+          <router-link to="/krunk-burgers" class="menu-link">View Our Menu</router-link>
         </div>
         <div class="footer-nav">
           <div class="content-wrapper">
             <div class="links">
-              <router-link to="/menu-burgers">Burgers</router-link>
+              <router-link to="/krunk-burgers">Burgers</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/menu-wings">Wings</router-link>
+              <router-link to="/krunk-wings">Wings</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/menu-shakes">Shakes</router-link>
+              <router-link to="/krunk-shakes">Shakes</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/menu-desserts">Desserts</router-link>
+              <router-link to="/krunk-desserts">Desserts</router-link>
             </div>
           </div>
         </div>

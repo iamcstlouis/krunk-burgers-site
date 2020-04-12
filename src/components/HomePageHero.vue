@@ -16,7 +16,7 @@
                 <h2 class="featured-meal-name">Classic Chicken</h2>
                 <p class="featured-meal-desc">Cheese, pickles, home-made coleslaw & burger</p>
                 <div class="view-more-btn">
-                  <router-link to="/menu-burgers" class="view-more">View More</router-link>
+                  <router-link to="/krunk-burgers" class="view-more">View More</router-link>
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ const routes = [{
     component: Home
   },
   {
-    path: "/menu-burgers",
+    path: "/krunk-burgers",
     name: "Burgers",
     component: Burgers
     // meta: {
@@ -25,7 +25,7 @@ const routes = [{
     // }
   },
   {
-    path: "/menu-wings",
+    path: "/krunk-wings",
     name: "Wings",
     component: Wings
     // meta: {
@@ -35,7 +35,7 @@ const routes = [{
     // }
   },
   {
-    path: "/menu-shakes",
+    path: "/krunk-shakes",
     name: "Shakes",
     component: Shakes
     // meta: {
@@ -45,7 +45,7 @@ const routes = [{
     // }
   },
   {
-    path: "/menu-desserts",
+    path: "/krunk-desserts",
     name: "Desserts",
     component: Desserts
     // meta: {
