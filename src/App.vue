@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
       <b-container>
         <router-link to="/" class="navbar-brand" href="#">
           <img src="./assets/krunk-burgers-logo.png" alt="Krunks Burgers Logo" class="top-nav-logo" />
@@ -70,6 +70,70 @@
             </li>
           </ul>
         </div>
+      </b-container>
+    </nav>-->
+
+    <nav class="top-nav">
+      <b-container>
+        <div class="logo-wrapper">
+          <router-link to="/" class="top-nav-link">
+            <img
+              src="./assets/krunk-burgers-logo.png"
+              alt="Krunks Burgers Logo"
+              class="top-nav-logo"
+            />
+          </router-link>
+        </div>
+
+        <!-- ***** Hamburger Toggler ***** -->
+        <div class="hamburger-btn">
+          <div class="hamburger-toggler">
+            <div class="line-top"></div>
+            <span class="menu">Menu</span>
+            <div class="line-btm"></div>
+          </div>
+        </div>
+
+        <!--    /////////////////////////////////////////////////////////////////////
+                                    Mobile Menu
+        ///////////////////////////////////////////////////////////////////////////-->
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu-links">
+            <router-link to="/">Home</router-link>
+            <router-link to="/krunk-burgers">Menu</router-link>
+            <router-link to="/about">About</router-link>
+            <router-link to="/contact">Contact</router-link>
+          </div>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=en">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Desktop Links -->
+        <ul class="desktop-links">
+          <li>
+            <router-link to="/" class="topNavBtn">Home</router-link>
+          </li>
+          <li>
+            <router-link to="/krunk-burgers" class="topNavBtn">Menu</router-link>
+          </li>
+          <li>
+            <router-link to="/about" class="topNavBtn">About</router-link>
+          </li>
+          <li>
+            <router-link to="/contact" class="topNavBtn">Contact</router-link>
+          </li>
+        </ul>
       </b-container>
     </nav>
 
@@ -158,105 +222,313 @@ a {
 //                  Top Nav
 // ----------------------------------------------------------------
 
-.navbar {
-  background: #290540;
+// .navbar {
+//   background: #290540;
 
-  .navbar-brand {
-    width: 8rem;
+//   .navbar-brand {
+//     width: 8rem;
 
-    img {
-      width: 100%;
-    }
+//     img {
+//       width: 100%;
+//     }
 
-    @media (min-width: 992px) {
-      max-width: 15.2rem;
-      width: 100%;
-    }
+//     @media (min-width: 992px) {
+//       max-width: 15.2rem;
+//       width: 100%;
+//     }
+//   }
+
+//   .top-nav {
+//     flex-direction: row;
+//     justify-content: space-around;
+
+//     @media (min-width: 992px) {
+//       margin-left: 30px;
+//     }
+
+//     li {
+//       a {
+//         color: #fff !important;
+//         font-family: "dnk";
+
+//         &:hover {
+//           color: #f9f871;
+//         }
+//       }
+
+//       &.active {
+//         border-bottom: solid #fff 1px;
+
+//         a {
+//           color: #fff !important;
+//         }
+//       }
+
+//       @media (min-width: 992px) {
+//         font-size: 2.4rem;
+//         margin-right: 2.3rem;
+//       }
+//     }
+//   }
+
+//   .socials {
+//     align-items: center;
+//     justify-content: center;
+//     padding-top: 1.5rem;
+//     padding-bottom: 1rem;
+//     flex-direction: row;
+
+//     li {
+//       margin-left: 1rem;
+//       padding: 0;
+
+//       &:first-child {
+//         margin-left: 0;
+//       }
+
+//       a {
+//         padding: 5px;
+//       }
+//     }
+
+//     @media (min-width: 992px) {
+//       width: auto;
+//       margin-left: auto;
+//       margin-right: 0;
+
+//       li {
+//         margin-left: 1rem;
+
+//         a {
+//           padding: 5px;
+//         }
+//       }
+//     }
+
+//     a {
+//       background: #f9f871;
+//       padding: 1rem;
+//       border-radius: 50%;
+
+//       svg {
+//         width: 2rem;
+//         height: 2rem;
+
+//         path {
+//           fill: #290540;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
+  width: 100vw;
+  background-color: #290540;
+  z-index: 100;
+
+  &.topNav-Active-tab {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.13rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
   }
 
-  .top-nav {
-    flex-direction: row;
-    justify-content: space-around;
-
-    @media (min-width: 992px) {
-      margin-left: 30px;
-    }
-
-    li {
-      a {
-        color: #fff !important;
-        font-family: "dnk";
-
-        &:hover {
-          color: #f9f871;
-        }
-      }
-
-      &.active {
-        border-bottom: solid #fff 1px;
-
-        a {
-          color: #fff !important;
-        }
-      }
-
-      @media (min-width: 992px) {
-        font-size: 2.4rem;
-        margin-right: 2.3rem;
-      }
-    }
-  }
-
-  .socials {
+  .container {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
 
-    li {
-      margin-left: 1rem;
-      padding: 0;
+    .logo-wrapper {
+      max-width: 90px;
 
-      &:first-child {
-        margin-left: 0;
-      }
-
-      a {
-        padding: 5px;
+      img {
+        width: 100%;
       }
     }
 
-    @media (min-width: 992px) {
-      width: auto;
-      margin-left: auto;
-      margin-right: 0;
+    .hamburger-btn {
+      // padding: 1rem 5rem 1rem 2rem;
+      cursor: pointer;
+      z-index: 1500;
 
-      li {
-        margin-left: 1rem;
+      .hamburger-toggler {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
 
-        a {
-          padding: 5px;
+        &.open {
+          transform: translateX(-2rem);
+        }
+      }
+
+      .line-top {
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 0.8rem;
+        background: #f9f871;
+        transition: all 0.5s ease-in-out;
+
+        &.open {
+          transform: rotate(45deg) translateX(16px);
+          width: 70%;
+        }
+      }
+
+      .menu {
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        color: #f9f871;
+        text-transform: uppercase;
+        display: block;
+        transition: all 0.5s ease-in-out;
+
+        &.open {
+          transform: translateX(5rem);
+          opacity: 0;
+        }
+      }
+
+      .line-btm {
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 0.8rem;
+        background: #f9f871;
+        transition: all 0.5s ease-in-out;
+
+        &.open {
+          transform: rotate(-45deg) translateX(16px);
+          width: 70%;
         }
       }
     }
 
-    a {
-      background: #f9f871;
-      padding: 1rem;
-      border-radius: 50%;
+    .mobile-menu {
+      display: none;
+    }
 
-      svg {
-        width: 2rem;
-        height: 2rem;
+    .desktop-links {
+      display: none;
+    }
+  }
+}
 
-        path {
-          fill: #290540;
-        }
+.leftTopNav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+
+  li {
+    flex-grow: 1;
+    align-self: center;
+
+    a.topNavBtn {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.13rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #858585;
+      cursor: pointer;
+
+      &:visited {
+        color: #858585;
+      }
+
+      &:hover {
+        color: #fff;
+        transition: 0.4s ease-in-out;
+      }
+
+      &:active {
+        color: #fff;
+        transition: 0.4s ease-in-out;
       }
     }
   }
 }
+
+/*  --------    Top Nav: Logo    --------  */
+
+// .topNavLogoWrapper {
+//   order: 1;
+//   flex: 3 0 20vw;
+//   text-align: center;
+//   z-index: 1500;
+
+//   .topNavlogoLink {
+//     display: inline-block;
+
+//     svg.topNavLogo {
+//       fill: #676767;
+//       width: 8rem;
+//       height: auto;
+//     }
+//   }
+// }
+
+/*  --------    Top Nav: Right Side    --------  */
+
+.rightTopNav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  order: 2;
+
+  li {
+    align-self: center;
+
+    a.topNavBtn {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.13rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #858585;
+      cursor: pointer;
+
+      &:visited {
+        color: #858585;
+      }
+
+      &:hover {
+        color: #fff;
+        transition: 0.4s ease-in-out;
+      }
+
+      &:active {
+        color: #fff;
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+/*  --------    Top Nav: Active Class    --------  */
+
+// .top-nav {
+//   a.topNav-Active-tab {
+//     font-size: 1.4rem;
+//     font-weight: 400;
+//     letter-spacing: 0.13rem;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     color: #fff;
+//     cursor: pointer;
+//   }
+// }
 
 // ----------------------------------------------------------------
 //                  Footer
