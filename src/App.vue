@@ -268,7 +268,7 @@ a {
       backdrop-filter: blur(2rem);
       overflow-y: scroll;
       padding-top: 10rem;
-      z-index: 102;
+      z-index: 1000;
       visibility: hidden;
       transition: all 0.4s ease-in-out;
 
@@ -319,7 +319,7 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 40%;
+        width: 30%;
         margin: 8rem auto 5rem auto;
 
         a {
