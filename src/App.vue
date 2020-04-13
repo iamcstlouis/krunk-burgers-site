@@ -34,11 +34,11 @@
           </div>
 
           <div class="socials">
-            <a href="https://www.facebook.com/Krunk-Burgers-442165483212032/">
+            <a href="https://www.facebook.com/Krunk-Burgers-442165483212032/" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="https://www.instagram.com/krunkburgers/?hl=en">
+            <a href="https://www.instagram.com/krunkburgers/?hl=en" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
