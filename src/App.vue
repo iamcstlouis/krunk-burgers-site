@@ -86,7 +86,7 @@
         </div>
 
         <!-- ***** Hamburger Toggler ***** -->
-        <div class="hamburger-btn">
+        <div class="hamburger-btn" v-on:click="toggleState()">
           <div class="hamburger-toggler">
             <div class="line-top"></div>
             <span class="menu">Menu</span>
@@ -169,6 +169,22 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleState: () => {
+      const selectElement = element => document.querySelector(element);
+
+      selectElement(".hamburger-toggler").classList.toggle("open");
+      selectElement(".mobile-menu").classList.toggle("open");
+      selectElement(".line-top").classList.toggle("open");
+      selectElement(".menu").classList.toggle("open");
+      selectElement(".line-btm").classList.toggle("open");
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
@@ -349,6 +365,7 @@ a {
 
     .logo-wrapper {
       max-width: 90px;
+      z-index: 2000;
 
       img {
         width: 100%;
@@ -396,7 +413,7 @@ a {
         transition: all 0.5s ease-in-out;
 
         &.open {
-          transform: translateX(5rem);
+          transform: translateX(-5rem);
           opacity: 0;
         }
       }
@@ -416,7 +433,84 @@ a {
     }
 
     .mobile-menu {
-      display: none;
+      position: fixed;
+      height: 0;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      background: rgba(41, 5, 64, 0.9098039215686274);
+      opacity: 0;
+      backdrop-filter: blur(2rem);
+      overflow-y: scroll;
+      padding-top: 10rem;
+      z-index: 102;
+      visibility: hidden;
+      transition: all 0.4s ease-in-out;
+
+      &.open {
+        height: 100vh;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .mobile-menu-links {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: #f9f971;
+          display: block;
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+
+          &::after {
+            content: "";
+            background: rgba(255, 255, 255, 0.08);
+            width: 70%;
+            height: 0.1rem;
+            display: block;
+            margin: 3rem auto 3rem auto;
+          }
+
+          &:hover {
+            color: #f9f871;
+            opacity: 1;
+          }
+
+          &:active {
+            color: #f9f871;
+            opacity: 1;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        border: solid white 1px;
+
+        i.fab,
+        a {
+          color: #f9f871;
+          font-size: 2rem;
+          text-decoration: none;
+          display: block;
+          padding: 2rem;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
     }
 
     .desktop-links {
