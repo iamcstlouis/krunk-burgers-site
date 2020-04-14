@@ -6,7 +6,6 @@
     >
       <div class="content-wrapper">
         <img src="./../assets/deliveroo-widget.png" alt="Deliveroo Widget" />
-        <!-- <span>Order for delivery</span> -->
       </div>
     </a>
   </div>

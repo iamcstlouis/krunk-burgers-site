@@ -317,15 +317,20 @@ a {
 
       .socials {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        width: 30%;
+        // width: 30%;
         margin: 8rem auto 5rem auto;
 
         a {
           text-decoration: none;
-          display: block;
+          display: inline-block;
           transition: all 0.5s ease-in-out;
+          margin-right: 2.5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
 
           i {
             color: #f9f871;
