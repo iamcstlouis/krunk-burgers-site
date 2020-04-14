@@ -47,20 +47,33 @@
         </div>
 
         <!-- Desktop Links -->
-        <ul class="desktop-links">
-          <li>
-            <router-link to="/" class="topNavBtn">Home</router-link>
-          </li>
-          <li>
-            <router-link to="/krunk-burgers" class="topNavBtn">Menu</router-link>
-          </li>
-          <li>
-            <router-link to="/about" class="topNavBtn">About</router-link>
-          </li>
-          <li>
-            <router-link to="/contact" class="topNavBtn">Contact</router-link>
-          </li>
-        </ul>
+
+        <div class="desktop-links">
+          <ul class="menu-links">
+            <li>
+              <router-link to="/" class="topNavBtn">Home</router-link>
+            </li>
+            <li>
+              <router-link to="/krunk-burgers" class="topNavBtn">Menu</router-link>
+            </li>
+            <li>
+              <router-link to="/about" class="topNavBtn">About</router-link>
+            </li>
+            <li>
+              <router-link to="/contact" class="topNavBtn">Contact</router-link>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/Krunk-Burgers-442165483212032/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/krunkburgers/?hl=en" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </b-container>
     </nav>
 
@@ -112,6 +125,16 @@ export default {
       selectElement(".line-top").classList.toggle("open");
       selectElement(".menu").classList.toggle("open");
       selectElement(".line-btm").classList.toggle("open");
+
+      // if ($("mobile-menu").is(":visible")) {
+      //   $("body").addClass("fixed-position");
+      // } else {
+      //   $("body").removeClass("fixed-position");
+      // }
+
+      // if {
+
+      // }
     }
   }
 };
@@ -126,6 +149,11 @@ html {
 
 body {
   font-size: 16px;
+
+  // To prevent scrolling when mobile-menu is open
+  &.fixed-position {
+    position: fixed;
+  }
 }
 
 #app {
@@ -173,15 +201,15 @@ a {
   width: 100vw;
   background-color: #290540;
 
-  &.topNav-Active-tab {
-    font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: 0.13rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-  }
+  // &.topNav-Active-tab {
+  //   font-size: 1.4rem;
+  //   font-weight: 400;
+  //   letter-spacing: 0.13rem;
+  //   text-transform: uppercase;
+  //   text-decoration: none;
+  //   color: #fff;
+  //   cursor: pointer;
+  // }
 
   .container {
     display: flex;
@@ -196,6 +224,10 @@ a {
     .logo-wrapper {
       max-width: 90px;
       z-index: 1500;
+
+      @media screen and (min-width: 1024px) {
+        max-width: 120px !important;
+      }
 
       img {
         width: 100%;
@@ -279,11 +311,14 @@ a {
       z-index: 1000;
       visibility: hidden;
       transition: all 0.4s ease-in-out;
-
       &.open {
         height: 100vh;
         visibility: visible;
         opacity: 1;
+      }
+
+      @media screen and (min-width: 1024px) {
+        display: none;
       }
 
       .mobile-menu-links {
@@ -360,97 +395,78 @@ a {
       display: none;
 
       @media screen and (min-width: 1024px) {
-        display: inline-flex;
+        display: flex;
+        width: 100%;
+
+        .menu-links {
+          display: flex;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+
+          li {
+            margin-left: 3rem;
+
+            a {
+              font-family: "dnk";
+              color: #fff;
+              font-size: 1.8rem;
+              font-weight: 900;
+              letter-spacing: 2px;
+            }
+          }
+        }
+
+        .socials {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+
+          a {
+            margin-left: 1.5rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            background: #f9f871;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s;
+
+            i {
+              color: #290540;
+              font-size: 2rem;
+              transition: all 0.4s;
+            }
+
+            &:hover {
+              background: #290540;
+
+              i {
+                color: #f9f871;
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        .menu-links {
+          li {
+            margin-left: 4rem;
+
+            a {
+              font-size: 2.2rem;
+            }
+          }
+        }
       }
     }
   }
 }
-
-.leftTopNav {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 2;
-
-  li {
-    flex-grow: 1;
-    align-self: center;
-
-    a.topNavBtn {
-      font-size: 1.4rem;
-      font-weight: 400;
-      letter-spacing: 0.13rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #858585;
-      cursor: pointer;
-
-      &:visited {
-        color: #858585;
-      }
-
-      &:hover {
-        color: #fff;
-        transition: 0.4s ease-in-out;
-      }
-
-      &:active {
-        color: #fff;
-        transition: 0.4s ease-in-out;
-      }
-    }
-  }
-}
-
-/*  --------    Top Nav: Right Side    --------  */
-
-.rightTopNav {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  order: 2;
-
-  li {
-    align-self: center;
-
-    a.topNavBtn {
-      font-size: 1.4rem;
-      font-weight: 400;
-      letter-spacing: 0.13rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #858585;
-      cursor: pointer;
-
-      &:visited {
-        color: #858585;
-      }
-
-      &:hover {
-        color: #fff;
-        transition: 0.4s ease-in-out;
-      }
-
-      &:active {
-        color: #fff;
-        transition: 0.4s ease-in-out;
-      }
-    }
-  }
-}
-
-/*  --------    Top Nav: Active Class    --------  */
-
-// .top-nav {
-//   a.topNav-Active-tab {
-//     font-size: 1.4rem;
-//     font-weight: 400;
-//     letter-spacing: 0.13rem;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     color: #fff;
-//     cursor: pointer;
-//   }
-// }
 
 // ----------------------------------------------------------------
 //                  Footer
