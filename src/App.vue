@@ -189,6 +189,10 @@ a {
     justify-content: space-between;
     padding: 1.5rem;
 
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-start;
+    }
+
     .logo-wrapper {
       max-width: 90px;
       z-index: 1500;
@@ -201,6 +205,10 @@ a {
     .hamburger-btn {
       cursor: pointer;
       z-index: 1500;
+
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
 
       .hamburger-toggler {
         position: relative;
@@ -319,7 +327,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        // width: 30%;
         margin: 8rem auto 5rem auto;
 
         a {
@@ -351,6 +358,10 @@ a {
 
     .desktop-links {
       display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: inline-flex;
+      }
     }
   }
 }
