@@ -3,7 +3,7 @@
     <nav class="top-nav">
       <b-container>
         <div class="logo-wrapper">
-          <router-link to="/" class="top-nav-link">
+          <router-link to="/" exact class="top-nav-link">
             <img
               src="./assets/krunk-burgers-logo.png"
               alt="Krunks Burgers Logo"
@@ -27,10 +27,10 @@
 
         <div id="mobile-menu" class="mobile-menu">
           <div class="mobile-menu-links">
-            <router-link to="/" v-on:click="closeOnClick()">Home</router-link>
-            <router-link to="/krunk-burgers" v-on:click="closeOnClick()">Menu</router-link>
-            <router-link to="/about" v-on:click="closeOnClick()">About</router-link>
-            <router-link to="/contact" v-on:click="closeOnClick()">Contact</router-link>
+            <router-link to="/" exact v-on:click="addText()">Home</router-link>
+            <router-link to="/krunk-burgers" exact v-on:click="closeOnClick()">Menu</router-link>
+            <router-link to="/about" exact v-on:click="closeOnClick()">About</router-link>
+            <router-link to="/contact" exact v-on:click="closeOnClick()">Contact</router-link>
           </div>
 
           <div class="socials">
@@ -51,16 +51,16 @@
         <div class="desktop-links">
           <ul class="menu-links">
             <li>
-              <router-link to="/" class="topNavBtn">Home</router-link>
+              <router-link to="/" exact class="topNavBtn">Home</router-link>
             </li>
             <li>
-              <router-link to="/krunk-burgers" class="topNavBtn">Menu</router-link>
+              <router-link to="/krunk-burgers" exact class="topNavBtn">Menu</router-link>
             </li>
             <li>
-              <router-link to="/about" class="topNavBtn">About</router-link>
+              <router-link to="/about" exact class="topNavBtn">About</router-link>
             </li>
             <li>
-              <router-link to="/contact" class="topNavBtn">Contact</router-link>
+              <router-link to="/contact" exact class="topNavBtn">Contact</router-link>
             </li>
           </ul>
 
@@ -84,24 +84,24 @@
     <footer>
       <b-container>
         <div class="view-our-menu">
-          <router-link to="/krunk-burgers" class="menu-link">View Our Menu</router-link>
+          <router-link to="/krunk-burgers" exact class="menu-link">View Our Menu</router-link>
         </div>
         <div class="footer-nav">
           <div class="content-wrapper">
             <div class="links">
-              <router-link to="/krunk-burgers">Burgers</router-link>
+              <router-link to="/krunk-burgers" exact>Burgers</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/krunk-wings">Wings</router-link>
+              <router-link to="/krunk-wings" exact>Wings</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/krunk-shakes">Shakes</router-link>
+              <router-link to="/krunk-shakes" exact>Shakes</router-link>
               <span>
                 <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
               </span>
-              <router-link to="/krunk-desserts">Desserts</router-link>
+              <router-link to="/krunk-desserts" exact>Desserts</router-link>
             </div>
           </div>
         </div>
@@ -131,10 +131,37 @@ export default {
 
       if (mobileMenu.classList.contains("open")) {
         body.classList.add("fixed-position");
+        // console.log("Menu open");
       } else {
         body.classList.remove("fixed-position");
+        // console.log("Menu closed");
       }
+
+      let menuLinks = document.querySelectorAll(".mobile-menu-links a");
+
+      for (let i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", () => {
+          console.log("You clicked a link");
+          // selectElement(".mobile-menu").classList.toggle("open");
+          if (mobileMenu.classList.contains("open")) {
+            mobileMenu.classList.remove("open");
+          }
+        });
+      }
+
+      // menuLinks.forEach(menuLink => console.log(menuLink));
     }
+
+    // addText: () => {
+    //   // const menuHdr = document.querySelector('.menu-hdr');
+    //   const menuLinks = document.querySelectorAll(".mobile-menu-links a");
+
+    //   // if (menuLinks.classList.contains("home-btn")) {
+    //   // console.log("You clicked the home button");
+    //   // }
+
+    //   // console.log("You clicked a mobile menu link");
+    // }
     // closeOnClick: () => {
     //   const mobileMenu = document.querySelector("mobile-menu");
     //   const mobileMenulinks = mobileMenu.children;

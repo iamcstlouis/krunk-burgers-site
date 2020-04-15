@@ -2,19 +2,19 @@
   <div class="sub-menu">
     <b-container>
       <div class="links">
-        <router-link to="/krunk-burgers">Burgers</router-link>
+        <router-link to="/krunk-burgers" exact>Burgers</router-link>
         <span>
           <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
-        <router-link to="/krunk-wings">Wings</router-link>
+        <router-link to="/krunk-wings" exact>Wings</router-link>
         <span>
           <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
-        <router-link to="/krunk-shakes">Shakes</router-link>
+        <router-link to="/krunk-shakes" exact>Shakes</router-link>
         <span>
           <img src="./../assets/menu/icn_sub_menu_bang.svg" alt class="separator" />
         </span>
-        <router-link to="/krunk-desserts">Desserts</router-link>
+        <router-link to="/krunk-desserts" exact>Desserts</router-link>
       </div>
     </b-container>
   </div>
