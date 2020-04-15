@@ -126,15 +126,14 @@ export default {
       selectElement(".menu").classList.toggle("open");
       selectElement(".line-btm").classList.toggle("open");
 
-      // if ($("mobile-menu").is(":visible")) {
-      //   $("body").addClass("fixed-position");
-      // } else {
-      //   $("body").removeClass("fixed-position");
-      // }
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const body = document.body;
 
-      // if {
-
-      // }
+      if (mobileMenu.classList.contains("open")) {
+        body.classList.add("fixed-position");
+      } else {
+        body.classList.remove("fixed-position");
+      }
     }
     // closeOnClick: () => {
     //   const mobileMenu = document.querySelector("mobile-menu");
