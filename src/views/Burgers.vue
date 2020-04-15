@@ -21,6 +21,12 @@ export default {
   components: {
     MenuBase,
     BurgerMealDeals
+  },
+  computed: {
+    active() {
+      const path = this.$route.path.split("/");
+      return path[path.length - 1].toLowerCase() === "burgers";
+    }
   }
 };
 </script>

@@ -27,10 +27,10 @@
 
         <div id="mobile-menu" class="mobile-menu">
           <div class="mobile-menu-links">
-            <router-link to="/">Home</router-link>
-            <router-link to="/krunk-burgers">Menu</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/contact">Contact</router-link>
+            <router-link to="/" v-on:click="closeOnClick()">Home</router-link>
+            <router-link to="/krunk-burgers" v-on:click="closeOnClick()">Menu</router-link>
+            <router-link to="/about" v-on:click="closeOnClick()">About</router-link>
+            <router-link to="/contact" v-on:click="closeOnClick()">Contact</router-link>
           </div>
 
           <div class="socials">
@@ -136,6 +136,14 @@ export default {
 
       // }
     }
+    // closeOnClick: () => {
+    //   const mobileMenu = document.querySelector("mobile-menu");
+    //   const mobileMenulinks = mobileMenu.children;
+    //   // let mobileMenu = document.querySelector(".mobile-menu");
+
+    //   // mobileMenu.remove.classList("open");
+    //   selectElement.this.console.log("You clicked");
+    // }
   }
 };
 </script>
@@ -200,16 +208,6 @@ a {
 .top-nav {
   width: 100vw;
   background-color: #290540;
-
-  // &.topNav-Active-tab {
-  //   font-size: 1.4rem;
-  //   font-weight: 400;
-  //   letter-spacing: 0.13rem;
-  //   text-transform: uppercase;
-  //   text-decoration: none;
-  //   color: #fff;
-  //   cursor: pointer;
-  // }
 
   .container {
     display: flex;
@@ -409,11 +407,24 @@ a {
             margin-left: 3rem;
 
             a {
+              position: relative;
               font-family: "dnk";
               color: #fff;
               font-size: 1.8rem;
               font-weight: 900;
               letter-spacing: 2px;
+
+              &.router-link-active {
+                &:after {
+                  position: absolute;
+                  content: "";
+                  width: 100%;
+                  height: 2px;
+                  background: #fff;
+                  bottom: -0.5rem;
+                  left: 0;
+                }
+              }
             }
           }
         }
@@ -513,7 +524,6 @@ footer {
 
       a {
         color: #f9f871;
-        // font-size: 3rem;
       }
     }
   }
