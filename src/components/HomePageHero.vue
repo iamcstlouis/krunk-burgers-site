@@ -48,10 +48,10 @@ export default {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 375px) {
     height: 80vh;
   }
 
