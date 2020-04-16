@@ -25,6 +25,8 @@ export default {
 
 <style lang="scss">
 .about-krunk {
+  margin-top: 6rem;
+
   .about-hdr {
     h1 {
       font-size: 5rem;
