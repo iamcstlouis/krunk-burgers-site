@@ -1,7 +1,7 @@
 <template>
   <section class="hero-img">
     <b-container>
-      <div class="featured-meal-deal col-11 col-md-12 col-lg-8 col-xl-6">
+      <div class="featured-meal-deal">
         <div class="content-wrapper">
           <div class="content">
             <h1 class="meal-deals-hdr">Meal Deals</h1>
@@ -58,14 +58,13 @@ export default {
   .container {
     position: relative;
     height: inherit;
+    display: flex;
+    align-items: center;
 
     .featured-meal-deal {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      @media screen and (min-width: 600px) {
+        width: 100%;
+      }
 
       .content-wrapper {
         display: flex;
@@ -73,16 +72,18 @@ export default {
         justify-content: center;
         align-items: center;
 
+        @media screen and (min-width: 1024px) {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
         .content {
           background: #f9f871;
-          // padding: 2rem;
           padding: 2rem 2rem 5rem 2rem;
-          // margin-top: 5rem;
           align-self: center;
 
           @media (min-width: 768px) {
             text-align: left;
-            // margin-top: 9rem;
           }
 
           h1 {
@@ -105,12 +106,19 @@ export default {
           p {
             color: #731550;
           }
+          span {
+            font-size: 12px;
+            @media screen and (min-width: 768px) {
+              font-size: 15px;
+            }
+          }
 
           .featured-meal {
             margin-top: 2rem;
 
             @media (min-width: 768px) {
               display: flex;
+              width: 500px;
             }
 
             .featured-meal-info {
@@ -119,6 +127,10 @@ export default {
               @media (min-width: 768px) {
                 margin-left: 2rem;
                 text-align: left;
+              }
+
+              p {
+                font-size: 15px;
               }
             }
 
@@ -134,6 +146,7 @@ export default {
                 color: #fff;
                 padding: 1rem 2rem;
                 font-family: "dnk";
+                font-size: 2rem;
                 letter-spacing: 1.2px;
                 text-decoration: none;
 

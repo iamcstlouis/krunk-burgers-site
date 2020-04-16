@@ -25,12 +25,12 @@
                                     Mobile Menu
         ///////////////////////////////////////////////////////////////////////////-->
 
-        <div id="mobile-menu" class="mobile-menu">
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
           <div class="mobile-menu-links">
-            <router-link to="/" exact v-on:click="addText()">Home</router-link>
-            <router-link to="/krunk-burgers" exact v-on:click="closeOnClick()">Menu</router-link>
-            <router-link to="/about" exact v-on:click="closeOnClick()">About</router-link>
-            <router-link to="/contact" exact v-on:click="closeOnClick()">Contact</router-link>
+            <router-link to="/" exact v-on:click="closeMenu()">Home</router-link>
+            <router-link to="/krunk-burgers" exact>Menu</router-link>
+            <router-link to="/about" exact>About</router-link>
+            <router-link to="/contact" exact>Contact</router-link>
           </div>
 
           <div class="socials">
@@ -119,57 +119,29 @@ export default {
   methods: {
     toggleState: () => {
       const selectElement = element => document.querySelector(element);
-
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const body = document.body;
+      // let menuLinks = document.querySelectorAll("nav a");
       selectElement(".hamburger-toggler").classList.toggle("open");
       selectElement(".mobile-menu").classList.toggle("open");
       selectElement(".line-top").classList.toggle("open");
       selectElement(".menu").classList.toggle("open");
       selectElement(".line-btm").classList.toggle("open");
 
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const body = document.body;
-
       if (mobileMenu.classList.contains("open")) {
         body.classList.add("fixed-position");
         // console.log("Menu open");
+        // for (let i = 0; i < menuLinks.length; i++) {
+        //   menuLinks[i].addEventListener("click", () => {
+        //     console.log(menuLinks[i]);
+        //     mobileMenu.classList.remove("open");
+        //   });
+        // }
       } else {
         body.classList.remove("fixed-position");
         // console.log("Menu closed");
       }
-
-      let menuLinks = document.querySelectorAll(".mobile-menu-links a");
-
-      for (let i = 0; i < menuLinks.length; i++) {
-        menuLinks[i].addEventListener("click", () => {
-          console.log("You clicked a link");
-          // selectElement(".mobile-menu").classList.toggle("open");
-          if (mobileMenu.classList.contains("open")) {
-            mobileMenu.classList.remove("open");
-          }
-        });
-      }
-
-      // menuLinks.forEach(menuLink => console.log(menuLink));
     }
-
-    // addText: () => {
-    //   // const menuHdr = document.querySelector('.menu-hdr');
-    //   const menuLinks = document.querySelectorAll(".mobile-menu-links a");
-
-    //   // if (menuLinks.classList.contains("home-btn")) {
-    //   // console.log("You clicked the home button");
-    //   // }
-
-    //   // console.log("You clicked a mobile menu link");
-    // }
-    // closeOnClick: () => {
-    //   const mobileMenu = document.querySelector("mobile-menu");
-    //   const mobileMenulinks = mobileMenu.children;
-    //   // let mobileMenu = document.querySelector(".mobile-menu");
-
-    //   // mobileMenu.remove.classList("open");
-    //   selectElement.this.console.log("You clicked");
-    // }
   }
 };
 </script>
