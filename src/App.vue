@@ -155,6 +155,7 @@ html {
 
 body {
   font-size: 16px;
+  overflow-x: hidden;
 
   // To prevent scrolling when mobile-menu is open
   &.fixed-position {
@@ -506,22 +507,26 @@ footer {
   }
 
   .footer-nav {
-    .links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+    margin-top: 1.5rem;
 
-      @media (min-width: 768px) {
-        width: 60%;
-        margin: 0 auto;
+    .content-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+
+      .links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (min-width: 768px) {
+          a {
+            font-size: 3rem;
+          }
+        }
 
         a {
-          font-size: 3rem;
+          color: #f9f871;
         }
-      }
-
-      a {
-        color: #f9f871;
       }
     }
   }
