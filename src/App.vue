@@ -112,6 +112,8 @@
 
 <script>
 import DeliverooWidget from "@/components/DeliverooWidget";
+import AOS from "aos";
+
 export default {
   components: {
     DeliverooWidget
@@ -142,6 +144,9 @@ export default {
         // console.log("Menu closed");
       }
     }
+  },
+  created() {
+    AOS.init();
   }
 };
 </script>
