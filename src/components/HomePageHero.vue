@@ -60,6 +60,7 @@ export default {
     height: inherit;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .featured-meal-deal {
       @media screen and (min-width: 600px) {
