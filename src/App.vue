@@ -16,7 +16,8 @@
         <div class="hamburger-btn" v-on:click="toggleState()">
           <div class="hamburger-toggler">
             <div class="line-top"></div>
-            <span class="menu">Menu</span>
+            <div class="line-mid"></div>
+            <!-- <span class="menu">Menu</span> -->
             <div class="line-btm"></div>
           </div>
         </div>
@@ -127,7 +128,7 @@ export default {
       selectElement(".hamburger-toggler").classList.toggle("open");
       selectElement(".mobile-menu").classList.toggle("open");
       selectElement(".line-top").classList.toggle("open");
-      selectElement(".menu").classList.toggle("open");
+      selectElement(".line-mid").classList.toggle("open");
       selectElement(".line-btm").classList.toggle("open");
 
       if (mobileMenu.classList.contains("open")) {
@@ -252,16 +253,22 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        width: 50px;
+        height: 25px;
+        opacity: 0.7;
         transition: all 0.5s ease-in-out;
 
         &.open {
           transform: translateX(-2rem);
+          width: 60px;
+          height: 27px;
         }
       }
 
       .line-top {
         width: 100%;
         height: 0.2rem;
+        height: 0.4rem;
         border-radius: 0.8rem;
         background: #f9f871;
         transition: all 0.5s ease-in-out;
@@ -272,13 +279,12 @@ a {
         }
       }
 
-      .menu {
-        font-size: 1.4rem;
-        font-weight: 600;
-        letter-spacing: 0.25rem;
-        color: #f9f871;
-        text-transform: uppercase;
-        display: block;
+      .line-mid {
+        width: 100%;
+        height: 0.2rem;
+        height: 0.4rem;
+        border-radius: 0.8rem;
+        background: #f9f871;
         transition: all 0.5s ease-in-out;
 
         &.open {
@@ -290,6 +296,7 @@ a {
       .line-btm {
         width: 100%;
         height: 0.2rem;
+        height: 0.4rem;
         border-radius: 0.8rem;
         background: #f9f871;
         transition: all 0.5s ease-in-out;
