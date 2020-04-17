@@ -1,11 +1,7 @@
 <template>
   <section class="hero-img">
     <b-container>
-      <div
-        class="featured-meal-deal"
-        data-aos="fade-up"
-        data-aos-duration="900"
-      >
+      <div class="featured-meal-deal" data-aos="fade-up">
         <div class="content-wrapper">
           <div class="content">
             <h1 class="meal-deals-hdr">Meal Deals</h1>

@@ -1,7 +1,7 @@
 <template>
   <div class="hdr-section">
-    <h1>{{ MealDealstitle }}</h1>
-    <h3>{{ MealDealsExcerpt }}</h3>
+    <h1 data-aos="fade-right" data-aos-delay="400">{{ MealDealstitle }}</h1>
+    <h3 data-aos="fade-left" data-aos-delay="900">{{ MealDealsExcerpt }}</h3>
   </div>
 </template>
 

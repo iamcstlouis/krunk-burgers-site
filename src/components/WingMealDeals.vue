@@ -6,7 +6,13 @@
       <div class="main-content">
         <div class="img-hdr-wrapper">
           <div class="img-wrapper">
-            <img src="./../assets/menu/wings/wings.jpg" alt="Krunks Wings" class="featured-img" />
+            <img
+              src="./../assets/menu/wings/wings.jpg"
+              alt="Krunks Wings"
+              class="featured-img"
+              data-aos="fade-up"
+              data-aos-delay="1400"
+            />
           </div>
 
           <div class="wings-hdr-wrapper">
@@ -20,7 +26,12 @@
 
         <div class="wing-flavours-list">
           <ul id="flavours">
-            <li v-for="item in flavours" :key="item.flavour">
+            <li
+              v-for="item in flavours"
+              :key="item.flavour"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"

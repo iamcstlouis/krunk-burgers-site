@@ -146,7 +146,9 @@ export default {
     }
   },
   created() {
-    AOS.init();
+    AOS.init({
+      duration: 1400
+    });
   }
 };
 </script>

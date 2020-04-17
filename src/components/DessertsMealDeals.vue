@@ -10,6 +10,8 @@
               src="./../assets/menu/dessert/dessert-1.jpg"
               alt="Krunks Desserts"
               class="featured-img"
+              data-aos="fade-up"
+              data-aos-delay="1400"
             />
           </div>
 
@@ -23,7 +25,11 @@
         </div>
 
         <div class="desserts-flavours-list">
-          <ul id="desserts-flavours">
+          <ul
+            id="desserts-flavours"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <li v-for="item in dessertFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"

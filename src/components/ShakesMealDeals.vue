@@ -10,6 +10,8 @@
               src="./../assets/menu/shakes-n-smoothies/krunk-snickers-milkshake.jpg"
               alt="Krunks Shakes"
               class="featured-img"
+              data-aos="fade-right"
+              data-aos-delay="1200"
             />
           </div>
 
@@ -25,11 +27,15 @@
         <div class="shakes-flavours-list">
           <div class="shakes-flavours-hdr-mobile">
             <div class="hdr-wrapper">
-              <h2>Flavours</h2>
+              <h2 data-aos="fade-up-left" data-aos-delay="1200" >Flavours</h2>
             </div>
           </div>
 
-          <ul id="shakes-flavours">
+          <ul
+            id="shakes-flavours"
+            data-aos="fade-up-left"
+            data-aos-delay="1200"
+          >
             <li v-for="item in shakeFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"

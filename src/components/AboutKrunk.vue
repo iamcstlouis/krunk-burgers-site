@@ -6,7 +6,7 @@
           <h1>About</h1>
         </div>
 
-        <div class="about-main">
+        <div class="about-main" data-aos="example-anim1">
           <div class="content-wrapper">
             <h2>In the Krunk kitchen...</h2>
             <p>Duis metus ex, malesuada at tempus ut, laoreet sit amet orci. Phasellus lobortis nibh et sapien facilisis malesuada. Phasellus euismod eros at elit euismod, eget blandit tortor pretium. Vivamus sit amet mauris eros. Nam eget lacus vitae purus iaculis dictum sit amet eget velit. Sed vel rutrum leo. Sed vel fermentum lacus, at bibendum metus. Cras tristique ac urna ut egestas. Nam mattis sit amet diam vel tempor. Pellentesque at elit pharetra, tempor nulla eget, blandit sem. Morbi sollicitudin mauris massa, ac tincidunt ipsum bibendum nec. Etiam in ipsum non tortor interdum bibendum. Donec dolor arcu, ullamcorper at tincidunt at, auctor sit amet ipsum.</p>
@@ -78,6 +78,16 @@ export default {
         font-size: 16px;
         color: #290540;
       }
+    }
+  }
+
+  [data-aos="example-anim1"] {
+    transform: skewX(45deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: skewX(0);
+      opacity: 1;
     }
   }
 }
