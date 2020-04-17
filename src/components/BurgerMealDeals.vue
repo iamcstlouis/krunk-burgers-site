@@ -216,7 +216,7 @@ export default {
       letter-spacing: 1.5px;
       margin-bottom: 0;
       border-radius: 5px;
-      margin-top: 3rem;
+      margin-top: 5rem;
 
       &:first-child {
         margin-top: 2rem;

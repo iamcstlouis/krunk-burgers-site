@@ -15,10 +15,10 @@ export default {
 <style lang="scss" scoped>
 .meals-separator {
   .content-wrapper {
-    padding: 3.6rem 0 0.6rem 0;
+    padding: 3.6rem 0 0rem 0;
 
     @media screen and (min-width: 768px) {
-      padding: 9.6rem 0 6.6rem 0;
+      padding: 9.6rem 0 4.6rem 0;
     }
 
     .separator {
