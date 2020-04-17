@@ -17,7 +17,6 @@
           <div class="hamburger-toggler">
             <div class="line-top"></div>
             <div class="line-mid"></div>
-            <!-- <span class="menu">Menu</span> -->
             <div class="line-btm"></div>
           </div>
         </div>
