@@ -7,7 +7,7 @@
       <!-- Deliveroo Widget -->
       <DeliverooWidget />
 
-      <h1>Menu</h1>
+      <h1 data-aos="fade-down" data-aos-delay="50">Menu</h1>
       <SubMenu />
       <!-- <MenuHdr /> -->
       <slot></slot>
