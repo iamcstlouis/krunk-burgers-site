@@ -33,7 +33,7 @@
       <!-- Meals Separator  -->
       <MealsSeparator />
 
-      <h2 class="mobile-tab" data-aos="fade-right" data-aos-delay="1300">Chicken</h2>
+      <h2 class="mobile-tab" data-aos="fade-left" data-aos-delay="1300">Chicken</h2>
 
       <!-- Chicken Burger Cards -->
       <div class="cards cards__chicken">

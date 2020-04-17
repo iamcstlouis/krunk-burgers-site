@@ -11,14 +11,14 @@
               alt="Krunks Wings"
               class="featured-img"
               data-aos="fade-up"
-              data-aos-delay="2200"
+              data-aos-delay="1300"
             />
           </div>
 
           <div class="wings-hdr-wrapper">
             <div class="wings-flavours-hdr">
               <div class="hdr-wrapper">
-                <h2>Flavours</h2>
+                <h2 data-aos="fade-up" data-aos-delay="1450">Flavours</h2>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
               v-for="item in flavours"
               :key="item.flavour"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="1450"
             >
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
