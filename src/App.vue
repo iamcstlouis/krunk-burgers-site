@@ -147,7 +147,8 @@ export default {
   },
   created() {
     AOS.init({
-      duration: 1400
+      duration: 1400,
+      once: true
     });
   }
 };

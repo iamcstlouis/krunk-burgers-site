@@ -11,7 +11,7 @@
               alt="Krunks Shakes"
               class="featured-img"
               data-aos="fade-right"
-              data-aos-delay="1200"
+              data-aos-delay="1300"
             />
           </div>
 
@@ -27,15 +27,17 @@
         <div class="shakes-flavours-list">
           <div class="shakes-flavours-hdr-mobile">
             <div class="hdr-wrapper">
-              <h2 data-aos="fade-up-left" data-aos-delay="1200">Flavours</h2>
+              <h2 data-aos="fade-up" data-aos-delay="1200">Flavours</h2>
             </div>
           </div>
 
-          <ul id="shakes-flavours" data-aos="fade-up-left" data-aos-delay="1200">
+          <ul id="shakes-flavours">
             <li v-for="item in shakeFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
+                data-aos="fade-up-left"
+                data-aos-delay="450"
               >{{ item.flavour }}</a>
             </li>
           </ul>
