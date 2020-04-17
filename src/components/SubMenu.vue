@@ -1,6 +1,5 @@
 <template>
   <div class="sub-menu">
-    <!-- <b-container> -->
     <div class="links">
       <router-link to="/krunk-burgers" exact data-aos="fade-down" data-aos-delay="400">Burgers</router-link>
       <span>
@@ -34,7 +33,6 @@
       </span>
       <router-link to="/krunk-desserts" exact data-aos="fade-down" data-aos-delay="1600">Desserts</router-link>
     </div>
-    <!-- </b-container> -->
   </div>
 </template>
 
@@ -52,7 +50,6 @@ export default {
     margin-top: 3.5rem;
   }
 
-  // .container {
   .links {
     display: flex;
     align-items: center;
@@ -77,6 +74,5 @@ export default {
       margin: 0 0.5rem;
     }
   }
-  // }
 }
 </style>
