@@ -9,7 +9,7 @@
         <div class="contact-main" data-aos="example-anim1">
           <div class="content-wrapper">
             <h2>We'd love to hear from you!</h2>
-            <p>Pop in for something to eat or have your meal delivered straight to your door!</p>
+            <p>Pop in for something to eat, or have your meal delivered straight to your door!</p>
           </div>
         </div>
       </div>
