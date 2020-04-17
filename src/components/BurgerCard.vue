@@ -1,5 +1,5 @@
 <template>
-  <div class="burger-card" data-aos="fade-up" data-aos-delay="1200">
+  <div class="burger-card" data-aos="fade-up" data-aos-delay="2200">
     <div class="content-wrapper">
       <slot></slot>
     </div>

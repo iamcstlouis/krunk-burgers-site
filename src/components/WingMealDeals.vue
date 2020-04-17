@@ -11,7 +11,7 @@
               alt="Krunks Wings"
               class="featured-img"
               data-aos="fade-up"
-              data-aos-delay="1400"
+              data-aos-delay="2200"
             />
           </div>
 
