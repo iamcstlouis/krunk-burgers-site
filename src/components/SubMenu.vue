@@ -1,7 +1,27 @@
 <template>
   <div class="sub-menu">
     <div class="links">
-      <router-link to="/krunk-burgers" exact data-aos="fade-down" data-aos-delay="400">Burgers</router-link>
+      <router-link to="/krunk-burgers" exact data-aos="fade-down" data-aos-delay="100">Burgers</router-link>
+      <span>
+        <img
+          src="./../assets/menu/icn_sub_menu_bang.svg"
+          alt="Sub Menu Separator"
+          class="separator"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        />
+      </span>
+      <router-link to="/krunk-wings" exact data-aos="fade-down" data-aos-delay="300">Wings</router-link>
+      <span>
+        <img
+          src="./../assets/menu/icn_sub_menu_bang.svg"
+          alt="Sub Menu Separator"
+          class="separator"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        />
+      </span>
+      <router-link to="/krunk-shakes" exact data-aos="fade-down" data-aos-delay="500">Shakes</router-link>
       <span>
         <img
           src="./../assets/menu/icn_sub_menu_bang.svg"
@@ -11,27 +31,7 @@
           data-aos-delay="600"
         />
       </span>
-      <router-link to="/krunk-wings" exact data-aos="fade-down" data-aos-delay="800">Wings</router-link>
-      <span>
-        <img
-          src="./../assets/menu/icn_sub_menu_bang.svg"
-          alt="Sub Menu Separator"
-          class="separator"
-          data-aos="fade-down"
-          data-aos-delay="1000"
-        />
-      </span>
-      <router-link to="/krunk-shakes" exact data-aos="fade-down" data-aos-delay="1200">Shakes</router-link>
-      <span>
-        <img
-          src="./../assets/menu/icn_sub_menu_bang.svg"
-          alt="Sub Menu Separator"
-          class="separator"
-          data-aos="fade-down"
-          data-aos-delay="1400"
-        />
-      </span>
-      <router-link to="/krunk-desserts" exact data-aos="fade-down" data-aos-delay="1600">Desserts</router-link>
+      <router-link to="/krunk-desserts" exact data-aos="fade-down" data-aos-delay="700">Desserts</router-link>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <b-container>
       <MealDealsHdrExcerpt />
 
-      <h2 class="mobile-tab">Beef</h2>
+      <h2 class="mobile-tab" data-aos="fade-right" data-aos-delay="1300">Beef</h2>
       <!-- Beef Burger Cards  -->
       <div class="cards cards__beef">
         <!-- Menu Tab -->
@@ -16,7 +16,12 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
+            <img
+              v-bind:src="obj.burgerImg"
+              v-bind:alt="obj.alt"
+              data-aos="fade-up"
+              data-aos-delay="1300"
+            />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
@@ -28,7 +33,7 @@
       <!-- Meals Separator  -->
       <MealsSeparator />
 
-      <h2 class="mobile-tab">Chicken</h2>
+      <h2 class="mobile-tab" data-aos="fade-right" data-aos-delay="1300">Chicken</h2>
 
       <!-- Chicken Burger Cards -->
       <div class="cards cards__chicken">
@@ -42,7 +47,12 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
+            <img
+              v-bind:src="obj.burgerImg"
+              v-bind:alt="obj.alt"
+              data-aos="fade-up"
+              data-aos-delay="1300"
+            />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
@@ -53,7 +63,7 @@
 
       <MealsSeparator />
 
-      <h2 class="mobile-tab">Vegan</h2>
+      <h2 class="mobile-tab" data-aos="fade-right" data-aos-delay="1300">Vegan</h2>
 
       <!-- Vegan Burger Cards -->
       <div class="cards cards__vegan">
@@ -67,7 +77,12 @@
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
             target="_blank"
           >
-            <img v-bind:src="obj.burgerImg" v-bind:alt="obj.alt" />
+            <img
+              v-bind:src="obj.burgerImg"
+              v-bind:alt="obj.alt"
+              data-aos="fade-up"
+              data-aos-delay="1300"
+            />
             <div class="meal-info">
               <h2>{{ obj.burgerName }}</h2>
               <p class="meal-desc">{{ obj.burgerDesc }}</p>
