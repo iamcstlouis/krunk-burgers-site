@@ -35,6 +35,8 @@
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="450"
               >{{ item.flavour }}</a>
             </li>
           </ul>
