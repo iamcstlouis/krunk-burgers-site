@@ -198,12 +198,12 @@ export default {
   margin-top: 10.5rem;
   padding: 9.2rem 2rem;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     padding: 9.2rem 7.2rem;
     margin-top: 14.5rem;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 17.5rem;
   }
 
@@ -235,7 +235,7 @@ export default {
         }
       }
 
-      @media (min-width: 992px) {
+      @media screen and (min-width: 992px) {
         margin-top: 1rem;
       }
 

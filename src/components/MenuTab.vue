@@ -22,7 +22,7 @@ export default {
   border-bottom-left-radius: 5px;
   display: none;
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: block;
   }
 

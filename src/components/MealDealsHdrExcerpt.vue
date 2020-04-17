@@ -20,7 +20,7 @@ export default {
   h1 {
     color: #b23c52;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       font-size: 42px;
     }
   }

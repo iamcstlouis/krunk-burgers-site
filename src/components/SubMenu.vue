@@ -30,7 +30,7 @@ export default {
 .sub-menu {
   margin-top: 2.5rem;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-top: 3.5rem;
   }
 
@@ -46,11 +46,11 @@ export default {
         color: #731550 !important;
         font-size: 16px;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 768px) {
           font-size: 2rem;
         }
 
-        @media (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
           font-size: 2.6rem;
         }
       }

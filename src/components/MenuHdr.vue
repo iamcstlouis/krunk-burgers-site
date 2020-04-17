@@ -19,7 +19,7 @@ export default {
   z-index: 4;
   margin-top: 3rem;
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 0.7rem;
   }
 
@@ -31,11 +31,11 @@ export default {
       width: 50%;
       margin-left: 1rem;
 
-      @media (min-width: 1024px) {
+      @media screen and (min-width: 1024px) {
         width: 80%;
       }
 
-      @media (min-width: 1280px) {
+      @media screen and (min-width: 1280px) {
         width: 100%;
       }
     }

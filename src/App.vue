@@ -507,7 +507,7 @@ footer {
         text-decoration: none;
       }
 
-      @media (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         font-size: 7rem;
       }
     }
@@ -525,7 +525,7 @@ footer {
         justify-content: space-around;
         align-items: center;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 768px) {
           a {
             font-size: 3rem;
           }

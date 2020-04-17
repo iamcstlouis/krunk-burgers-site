@@ -27,15 +27,11 @@
         <div class="shakes-flavours-list">
           <div class="shakes-flavours-hdr-mobile">
             <div class="hdr-wrapper">
-              <h2 data-aos="fade-up-left" data-aos-delay="1200" >Flavours</h2>
+              <h2 data-aos="fade-up-left" data-aos-delay="1200">Flavours</h2>
             </div>
           </div>
 
-          <ul
-            id="shakes-flavours"
-            data-aos="fade-up-left"
-            data-aos-delay="1200"
-          >
+          <ul id="shakes-flavours" data-aos="fade-up-left" data-aos-delay="1200">
             <li v-for="item in shakeFlavours" :key="item.flavour">
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -101,13 +97,13 @@ export default {
   margin-top: 10.5rem;
   padding: 9.2rem 2rem;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     padding: 9.2rem 7.2rem;
     margin-top: 14.5rem;
     margin-bottom: 10rem;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 17.5rem;
   }
 
@@ -123,11 +119,11 @@ export default {
         .img-wrapper {
           margin-top: 5rem;
 
-          @media (min-width: 992px) {
+          @media screen and (min-width: 992px) {
             margin-top: 6rem;
           }
 
-          @media (min-width: 1024px) {
+          @media screen and (min-width: 1024px) {
             max-width: 450px;
           }
 
@@ -142,12 +138,12 @@ export default {
           left: 50%;
           transform: translateX(-50%);
 
-          @media (min-width: 768px) {
+          @media screen and (min-width: 768px) {
             left: 2rem;
             transform: none;
           }
 
-          @media (min-width: 992px) {
+          @media screen and (min-width: 992px) {
             bottom: -3.5rem;
           }
 
@@ -172,7 +168,7 @@ export default {
                 padding-top: 1rem;
                 padding: 0.5rem 2rem;
 
-                @media (min-width: 992px) {
+                @media screen and (min-width: 992px) {
                   font-size: 42px;
                 }
               }
@@ -186,7 +182,7 @@ export default {
                 left: 0.5rem;
                 top: 0.5rem;
 
-                @media (min-width: 992px) {
+                @media screen and (min-width: 992px) {
                   width: 23rem;
                   height: 6.25rem;
                 }
@@ -199,11 +195,11 @@ export default {
       .shakes-flavours-list {
         margin-top: 5rem;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 768px) {
           padding-left: 4rem;
         }
 
-        @media (min-width: 992px) {
+        @media screen and (min-width: 992px) {
           padding-left: 3.5rem;
           margin-top: 10rem;
         }
@@ -263,7 +259,7 @@ export default {
             }
           }
 
-          @media (min-width: 768px) {
+          @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;

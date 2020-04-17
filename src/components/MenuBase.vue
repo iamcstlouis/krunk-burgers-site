@@ -38,7 +38,7 @@ export default {
   background-color: #f9b450;
   padding-bottom: 12rem;
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 20rem;
   }
 
@@ -50,11 +50,11 @@ export default {
       margin-bottom: 0;
       margin-top: 3rem;
 
-      @media (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         margin-top: 1rem;
       }
 
-      @media (min-width: 1024px) {
+      @media screen and (min-width: 1024px) {
         font-size: 6.7rem;
         margin-top: 0;
       }
@@ -65,7 +65,7 @@ export default {
       left: 0;
       display: none;
 
-      @media (min-width: 576px) {
+      @media screen and (min-width: 576px) {
         display: block;
       }
     }
@@ -76,7 +76,7 @@ export default {
       margin-left: auto;
       margin-right: auto;
 
-      @media (min-width: 576px) {
+      @media screen and (min-width: 576px) {
         margin-right: 0;
       }
     }

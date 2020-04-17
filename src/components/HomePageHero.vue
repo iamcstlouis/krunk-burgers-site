@@ -51,7 +51,7 @@ export default {
   height: 100vh;
   width: 100%;
 
-  @media (min-width: 375px) {
+  @media screen and (min-width: 375px) {
     height: 80vh;
   }
 
@@ -83,7 +83,7 @@ export default {
           padding: 2rem 2rem 5rem 2rem;
           align-self: center;
 
-          @media (min-width: 768px) {
+          @media screen and (min-width: 768px) {
             text-align: left;
           }
 
@@ -92,7 +92,7 @@ export default {
             font-size: 4rem;
             margin: 0;
 
-            @media (min-width: 768px) {
+            @media screen and (min-width: 768px) {
               font-size: 5rem;
             }
           }
@@ -117,7 +117,7 @@ export default {
           .featured-meal {
             margin-top: 2rem;
 
-            @media (min-width: 768px) {
+            @media screen and (min-width: 768px) {
               display: flex;
               width: 500px;
             }
@@ -125,7 +125,7 @@ export default {
             .featured-meal-info {
               margin-top: 2rem;
 
-              @media (min-width: 768px) {
+              @media screen and (min-width: 768px) {
                 margin-left: 2rem;
                 text-align: left;
               }
@@ -138,7 +138,7 @@ export default {
             .view-more-btn {
               margin-top: 3rem;
 
-              @media (min-width: 768px) {
+              @media screen and (min-width: 768px) {
                 margin-top: 4.5rem;
               }
 

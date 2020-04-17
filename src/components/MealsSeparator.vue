@@ -17,7 +17,7 @@ export default {
   .content-wrapper {
     padding: 3.6rem 0;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       padding: 9.6rem 0;
     }
 

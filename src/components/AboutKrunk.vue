@@ -34,11 +34,11 @@ export default {
       margin-bottom: 0;
       margin-top: 3rem;
 
-      @media (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         margin-top: 1rem;
       }
 
-      @media (min-width: 1024px) {
+      @media screen and (min-width: 1024px) {
         font-size: 6.7rem;
         margin-top: 0;
       }
@@ -65,7 +65,7 @@ export default {
         font-family: "dnk";
         color: #b23c52;
 
-        @media (min-width: 768px) {
+        @media screen and (min-width: 768px) {
           font-size: 42px;
         }
       }
