@@ -15,9 +15,9 @@
         <!-- ***** Hamburger Toggler ***** -->
         <div class="hamburger-btn" v-on:click="toggleState()">
           <div class="hamburger-toggler">
-            <div class="line-top"></div>
-            <div class="line-mid"></div>
-            <div class="line-btm"></div>
+            <div class="bar bar__top"></div>
+            <div class="bar bar__mid"></div>
+            <div class="bar bar__btm"></div>
           </div>
         </div>
 
@@ -126,9 +126,9 @@ export default {
       // let menuLinks = document.querySelectorAll("nav a");
       selectElement(".hamburger-toggler").classList.toggle("open");
       selectElement(".mobile-menu").classList.toggle("open");
-      selectElement(".line-top").classList.toggle("open");
-      selectElement(".line-mid").classList.toggle("open");
-      selectElement(".line-btm").classList.toggle("open");
+      selectElement(".bar__top").classList.toggle("open");
+      selectElement(".bar__mid").classList.toggle("open");
+      selectElement(".bar__btm").classList.toggle("open");
 
       if (mobileMenu.classList.contains("open")) {
         body.classList.add("fixed-position");
@@ -252,9 +252,9 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 50px;
+        width: 40px;
         height: 25px;
-        opacity: 0.7;
+        opacity: 1;
         transition: all 0.5s ease-in-out;
 
         &.open {
@@ -262,47 +262,35 @@ a {
           width: 60px;
           height: 27px;
         }
-      }
 
-      .line-top {
-        width: 100%;
-        height: 0.2rem;
-        height: 0.4rem;
-        border-radius: 0.8rem;
-        background: #f9f871;
-        transition: all 0.5s ease-in-out;
+        .bar {
+          width: 100%;
+          height: 0.2rem;
+          height: 0.4rem;
+          border-radius: 0.8rem;
+          background: #f9f871;
+          transition: all 0.5s ease-in-out;
 
-        &.open {
-          transform: rotate(45deg) translateX(16px);
-          width: 70%;
-        }
-      }
+          &__top {
+            &.open {
+              transform: rotate(45deg) translateX(16px);
+              width: 70%;
+            }
+          }
 
-      .line-mid {
-        width: 100%;
-        height: 0.2rem;
-        height: 0.4rem;
-        border-radius: 0.8rem;
-        background: #f9f871;
-        transition: all 0.5s ease-in-out;
+          &__mid {
+            &.open {
+              transform: translateX(-5rem);
+              opacity: 0;
+            }
+          }
 
-        &.open {
-          transform: translateX(-5rem);
-          opacity: 0;
-        }
-      }
-
-      .line-btm {
-        width: 100%;
-        height: 0.2rem;
-        height: 0.4rem;
-        border-radius: 0.8rem;
-        background: #f9f871;
-        transition: all 0.5s ease-in-out;
-
-        &.open {
-          transform: rotate(-45deg) translateX(16px);
-          width: 70%;
+          &__btm {
+            &.open {
+              transform: rotate(-45deg) translateX(16px);
+              width: 70%;
+            }
+          }
         }
       }
     }
