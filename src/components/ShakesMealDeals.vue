@@ -32,12 +32,15 @@
           </div>
 
           <ul id="shakes-flavours">
-            <li v-for="item in shakeFlavours" :key="item.flavour">
+            <li
+              v-for="item in shakeFlavours"
+              :key="item.flavour"
+              data-aos="fade-up-left"
+              data-aos-delay="450"
+            >
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
-                data-aos="fade-up-left"
-                data-aos-delay="450"
               >{{ item.flavour }}</a>
             </li>
           </ul>

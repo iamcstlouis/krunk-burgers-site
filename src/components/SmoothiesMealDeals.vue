@@ -27,12 +27,17 @@
         <div class="smoothies-flavours-list">
           <div class="smoothies-flavours-hdr-mobile">
             <div class="hdr-wrapper">
-              <h2 data-aos="fade-up" data-aos-delay="1200">Flavours</h2>
+              <h2 data-aos="fade-up" data-aos-delay="600">Flavours</h2>
             </div>
           </div>
 
-          <ul id="smoothie-flavours" data-aos="fade-up" data-aos-delay="1200">
-            <li v-for="item in smoothieFlavours" :key="item.flavour">
+          <ul id="smoothie-flavours">
+            <li
+              v-for="item in smoothieFlavours"
+              :key="item.flavour"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
