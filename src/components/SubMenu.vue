@@ -68,6 +68,11 @@ export default {
       @media screen and (min-width: 1024px) {
         font-size: 2.6rem;
       }
+
+      &.router-link-active {
+        font-weight: 900;
+        text-decoration: underline;
+      }
     }
 
     span {
