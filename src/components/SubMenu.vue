@@ -57,6 +57,14 @@ export default {
     width: 95%;
     margin: 0 auto;
 
+    @media screen and (min-width: 768px) {
+      width: 65%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 50%;
+    }
+
     a {
       color: #731550 !important;
       font-size: 16px;
@@ -66,12 +74,11 @@ export default {
       }
 
       @media screen and (min-width: 1024px) {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
       }
 
       &.router-link-active {
         font-weight: 900;
-        text-decoration: underline;
       }
     }
 

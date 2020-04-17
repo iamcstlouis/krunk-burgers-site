@@ -3,6 +3,7 @@
     <b-container>
       <MealDealsHdrExcerpt />
 
+      <h2 class="mobile-tab">Beef</h2>
       <!-- Beef Burger Cards  -->
       <div class="cards cards__beef">
         <!-- Menu Tab -->
@@ -10,7 +11,6 @@
           <h2>Beef</h2>
         </MenuTab>
 
-        <!-- <h2 class="mobile-tab">Beef</h2> -->
         <BurgerCard v-for="(obj, key) in beefBurger" :key="key">
           <a
             href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -28,14 +28,14 @@
       <!-- Meals Separator  -->
       <MealsSeparator />
 
+      <h2 class="mobile-tab">Chicken</h2>
+
       <!-- Chicken Burger Cards -->
       <div class="cards cards__chicken">
         <!-- Menu Tab -->
         <MenuTab>
           <h2>Chicken</h2>
         </MenuTab>
-
-        <!-- <h2 class="mobile-tab">Chicken</h2> -->
 
         <BurgerCard v-for="(obj, key) in chickenBurger" :key="key">
           <a
@@ -53,14 +53,14 @@
 
       <MealsSeparator />
 
+      <h2 class="mobile-tab">Vegan</h2>
+
       <!-- Vegan Burger Cards -->
       <div class="cards cards__vegan">
         <!-- Menu Tab -->
         <MenuTab>
           <h2>Vegan</h2>
         </MenuTab>
-
-        <!-- <h2 class="mobile-tab">Vegan</h2> -->
 
         <BurgerCard v-for="(obj, key) in veganBurger" :key="key">
           <a
@@ -208,32 +208,28 @@ export default {
   }
 
   .container {
+    .mobile-tab {
+      font-family: "dnk";
+      background-color: #e1734e;
+      color: #731550;
+      font-size: 26px;
+      letter-spacing: 1.5px;
+      margin-bottom: 0;
+      border-radius: 5px;
+      margin-top: 3rem;
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+
+      @media screen and (min-width: 1280px) {
+        display: none;
+      }
+    }
+
     .cards {
       display: flex;
       flex-wrap: wrap;
-
-      .mobile-tab {
-        font-family: "dnk";
-        color: #f9b450;
-        font-size: 26px;
-        margin-bottom: 0;
-        position: relative;
-
-        &:after {
-          content: "";
-          height: 0.2rem;
-          width: 100%;
-          background: #f9b450;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        &:first-child {
-          margin-bottom: -2rem;
-        }
-      }
 
       @media screen and (min-width: 992px) {
         margin-top: 1rem;
