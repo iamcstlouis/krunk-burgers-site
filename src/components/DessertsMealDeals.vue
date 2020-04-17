@@ -11,26 +11,27 @@
               alt="Krunks Desserts"
               class="featured-img"
               data-aos="fade-up"
-              data-aos-delay="1400"
+              data-aos-delay="1200"
             />
           </div>
 
           <div class="desserts-hdr-wrapper">
             <div class="desserts-flavours-hdr">
               <div class="hdr-wrapper">
-                <h2>Flavours</h2>
+                <h2 data-aos="fade-up" data-aos-delay="600">Flavours</h2>
               </div>
             </div>
           </div>
         </div>
 
         <div class="desserts-flavours-list">
-          <ul
-            id="desserts-flavours"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <li v-for="item in dessertFlavours" :key="item.flavour">
+          <ul id="desserts-flavours">
+            <li
+              v-for="item in dessertFlavours"
+              :key="item.flavour"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
               <a
                 href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                 target="_blank"
