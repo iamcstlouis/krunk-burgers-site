@@ -310,6 +310,7 @@ a {
       z-index: 1000;
       visibility: hidden;
       transition: all 0.4s ease-in-out;
+
       &.open {
         height: 100vh;
         visibility: visible;
