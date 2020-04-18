@@ -582,6 +582,10 @@ footer {
   .copyright-section {
     margin-top: 6rem;
 
+    @media screen and (min-width: 1024px) {
+      margin-top: 10rem;
+    }
+
     .logo-wrapper {
       max-width: 90px;
       margin: 0 auto;
