@@ -34,12 +34,10 @@
 
               <div class="contact-details">
                 <p class="contact-no" data-aos="fade-left" data-aos-delay="800">020 8684 1587</p>
-                <p class="address">
-                  <span data-aos="fade-left" data-aos-delay="900">79 Whitehorse,</span>
-                  <br />
-                  <span data-aos="fade-left" data-aos-delay="1000">London,</span>
-                  <br />
-                  <span data-aos="fade-left" data-aos-delay="1200">CR02JJ</span>
+                <p class="address" data-aos="fade-up" data-aos-delay="900">
+                  79 Whitehorse,
+                  <br />London,
+                  <br />CR02JJ
                 </p>
               </div>
             </div>
@@ -208,6 +206,7 @@ export default {
           &.address {
             @media screen and (min-width: 1024px) {
               margin-top: 0.5rem;
+              font-size: 18px;
             }
           }
         }
