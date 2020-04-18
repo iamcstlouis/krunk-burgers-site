@@ -20,7 +20,7 @@
               </div>
 
               <p class="contact-excerpt">
-                Pop infor something to eat, or
+                Pop in for something to eat, or
                 <a
                   href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
                   target="_blank"
@@ -75,11 +75,25 @@ export default {
     margin-top: 2rem;
 
     .content-wrapper {
-      .img-wrapper {
-        margin-top: 2rem;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        @media screen and (min-width: 768px) {
-          margin-top: 3rem;
+      margin-top: 2rem;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 3rem;
+      }
+
+      @media screen and (min-width: 1024px) {
+        margin-top: 5rem;
+      }
+
+      .img-wrapper {
+        @media screen and (min-width: 1024px) {
+          flex: 0 0 48%;
         }
 
         img {
@@ -88,11 +102,23 @@ export default {
       }
 
       .main-copy {
+        @media screen and (min-width: 1024px) {
+          flex: 0 0 48%;
+        }
+
         .hdr-wrapper {
           position: relative;
           display: inline-flex;
           align-items: center;
           justify-content: center;
+
+          @media screen and (min-width: 1024px) {
+            margin-left: -1rem;
+          }
+
+          @media screen and (min-width: 1200px) {
+            margin-left: -10rem;
+          }
 
           h2 {
             font-family: "dnk";
@@ -102,8 +128,12 @@ export default {
             z-index: 300;
             padding: 0.5rem 2rem;
 
-            @media screen and (min-width: 992px) {
-              font-size: 42px;
+            @media screen and (min-width: 768px) {
+              font-size: 32px;
+            }
+
+            @media screen and (min-width: 1024px) {
+              font-size: 28px;
             }
           }
 
@@ -131,11 +161,30 @@ export default {
           color: #290540;
           text-align: center;
 
+          a {
+            color: #290540;
+            font-weight: 900;
+            cursor: pointer;
+          }
+
+          @media screen and (min-width: 1024px) {
+            text-align: left;
+            margin-left: 2rem;
+          }
+
           &.contact-excerpt {
             padding: 0 3rem;
 
             @media screen and (min-width: 768px) {
               padding: 0 10rem;
+            }
+
+            @media screen and (min-width: 1024px) {
+              padding: 0;
+            }
+
+            @media screen and (min-width: 1200px) {
+              width: 80%;
             }
           }
 
@@ -143,12 +192,16 @@ export default {
             font-size: 20px;
             font-weight: 900;
             color: #731550;
+
+            @media screen and (min-width: 768px) {
+              font-size: 24px;
+            }
           }
 
-          a {
-            color: #290540;
-            font-weight: 900;
-            cursor: pointer;
+          &.address {
+            @media screen and (min-width: 1024px) {
+              margin-top: 0.5rem;
+            }
           }
         }
       }

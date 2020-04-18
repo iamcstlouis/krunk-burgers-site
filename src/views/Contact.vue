@@ -12,11 +12,11 @@ import DeliverooWidget from "@/components/DeliverooWidget";
 import ContactKrunk from "@/components/ContactKrunk";
 
 export default {
-  name: "Contact",
-  components: {
-    DeliverooWidget,
-    ContactKrunk
-  }
+    name: "Contact",
+    components: {
+        DeliverooWidget,
+        ContactKrunk
+    }
 };
 </script>
 
