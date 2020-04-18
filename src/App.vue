@@ -84,24 +84,53 @@
     <footer>
       <b-container>
         <div class="view-our-menu">
-          <router-link to="/krunk-burgers" exact class="menu-link">View Our Menu</router-link>
+          <router-link
+            to="/krunk-burgers"
+            exact
+            class="menu-link"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >View Our Menu</router-link>
         </div>
         <div class="footer-nav">
           <div class="content-wrapper">
             <div class="links">
-              <router-link to="/krunk-burgers" exact>Burgers</router-link>
+              <router-link to="/krunk-burgers" exact data-aos="fade-up" data-aos-delay="150">Burgers</router-link>
               <span>
-                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+                <img
+                  src="./assets/icn_footer_menu_bang.svg"
+                  alt="Footer nav separator"
+                  class="separator"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                />
               </span>
-              <router-link to="/krunk-wings" exact>Wings</router-link>
+              <router-link to="/krunk-wings" exact data-aos="fade-up" data-aos-delay="350">Wings</router-link>
               <span>
-                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+                <img
+                  src="./assets/icn_footer_menu_bang.svg"
+                  alt="Footer nav separator"
+                  class="separator"
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                />
               </span>
-              <router-link to="/krunk-shakes" exact>Shakes</router-link>
+              <router-link to="/krunk-shakes" exact data-aos="fade-up" data-aos-delay="550">Shakes</router-link>
               <span>
-                <img src="./assets/icn_footer_menu_bang.svg" alt class="separator" />
+                <img
+                  src="./assets/icn_footer_menu_bang.svg"
+                  alt="Footer nav separator"
+                  class="separator"
+                  data-aos="fade-up"
+                  data-aos-delay="650"
+                />
               </span>
-              <router-link to="/krunk-desserts" exact>Desserts</router-link>
+              <router-link
+                to="/krunk-desserts"
+                exact
+                data-aos="fade-up"
+                data-aos-delay="750"
+              >Desserts</router-link>
             </div>
           </div>
         </div>
