@@ -534,7 +534,7 @@ footer {
   background: #290540 url("./assets/bg-buildings.svg") 100% 45px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 8rem 0 5rem 0;
+  padding: 8rem 0 1rem 0;
   position: relative;
 
   .view-our-menu {
@@ -580,7 +580,7 @@ footer {
   }
 
   .copyright-section {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .logo-wrapper {
       max-width: 90px;
