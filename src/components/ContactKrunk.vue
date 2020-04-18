@@ -4,22 +4,27 @@
       <div class="content-wrapper">
         <div class="contact-hdr-wrapper">
           <div class="contact-hdr">
-            <h1>Contact</h1>
+            <h1 data-aos="fade-down" data-aos-delay="50">Contact</h1>
           </div>
         </div>
 
         <div class="contact-main">
           <div class="content-wrapper">
             <div class="img-wrapper">
-              <img src="./../assets/contact/contact-krunk.jpg" alt="Krunk on Site" />
+              <img
+                src="./../assets/contact/contact-krunk.jpg"
+                alt="Krunk on Site"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
             </div>
 
             <div class="main-copy">
-              <div class="hdr-wrapper" data-aos="fade-up" data-aos-delay="1450">
+              <div class="hdr-wrapper" data-aos="fade-up" data-aos-delay="500">
                 <h2>We'd love to hear from you!</h2>
               </div>
 
-              <p class="contact-excerpt">
+              <p class="contact-excerpt" data-aos="fade-left" data-aos-delay="700">
                 Pop in for something to eat, or
                 <a
                   href="https://deliveroo.co.uk/menu/london/croydon/krunk?day=today&postcode=SE256NX&time=ASAP"
@@ -28,11 +33,13 @@
               </p>
 
               <div class="contact-details">
-                <p class="contact-no">020 8684 1587</p>
+                <p class="contact-no" data-aos="fade-left" data-aos-delay="800">020 8684 1587</p>
                 <p class="address">
-                  79 Whitehorse,
-                  <br />London,
-                  <br />CR02JJ
+                  <span data-aos="fade-left" data-aos-delay="900">79 Whitehorse,</span>
+                  <br />
+                  <span data-aos="fade-left" data-aos-delay="1000">London,</span>
+                  <br />
+                  <span data-aos="fade-left" data-aos-delay="1200">CR02JJ</span>
                 </p>
               </div>
             </div>
