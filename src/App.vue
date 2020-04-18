@@ -134,6 +134,19 @@
             </div>
           </div>
         </div>
+
+        <div class="copyright-section">
+          <div class="logo-wrapper">
+            <img
+              src="./assets/krunk-burgers-logo.png"
+              alt="Krunks Burgers Logo"
+              class="footer-logo"
+            />
+          </div>
+          <p
+            class="copyright"
+          >copyright &copy; {{ currentDate.getFullYear() }} Krunk. All rights reserved.</p>
+        </div>
       </b-container>
     </footer>
   </div>
@@ -147,6 +160,9 @@ export default {
   components: {
     DeliverooWidget
   },
+  data: () => ({
+    currentDate: new Date()
+  }),
   methods: {
     toggleState: () => {
       const selectElement = element => document.querySelector(element);
@@ -560,6 +576,25 @@ footer {
           color: #f9f871;
         }
       }
+    }
+  }
+
+  .copyright-section {
+    margin-top: 4rem;
+
+    .logo-wrapper {
+      max-width: 90px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .copyright {
+      font-size: 11px;
+      color: #f9b450;
+      margin-top: 1rem;
     }
   }
 }
