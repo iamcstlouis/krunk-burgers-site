@@ -7,6 +7,7 @@ import Shakes from "../views/Shakes.vue";
 import Desserts from "../views/Desserts.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
+import { closeMenu } from "../router/utils";
 
 Vue.use(VueRouter);
 
@@ -71,6 +72,10 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes
+});
+
+router.afterEach(() => {
+  closeMenu();
 });
 
 export default router;
