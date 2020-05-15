@@ -347,7 +347,7 @@ a {
       width: 100vw;
       top: 0;
       left: 0;
-      background: rgba(41, 5, 64, 0.9098039215686274);
+      background: rgba(41, 5, 64, 0.97);
       opacity: 0;
       backdrop-filter: blur(2rem);
       overflow-y: scroll;
